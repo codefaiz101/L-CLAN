@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/lclanlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/lclanlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LCLAN"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Domains.WebDevelopment.Frontend.Fragment.FrontendFragment"
+            android:exported="true" >
+<!--        <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
+
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".Domains.WebDevelopment.Frontend.FrontendTechnologyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Domains.WebDevelopment.Backend.BackendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Domains.WebDevelopment.Frontend.FrontendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Domains.WebDevelopment.WebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Domains.AndroidDevelopment.AndroidDevelopmentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_android_development"
+            android:theme="@style/Theme.LCLAN.NoActionBar" />
+        <activity
+            android:name=".Domains.DomainsPartActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".OtherActivities.MainActivity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OtherActivities.coming_soon"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OtherActivities.phnnovrf"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OtherActivities.first_page"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OtherActivities.userprofile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OtherActivities.signup_page"
+            android:exported="false"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OtherActivities.Dashboard"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OtherActivities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
