@@ -27,7 +27,8 @@ import java.util.ArrayList;
             recyclerView = findViewById(R.id.recyclerview);
 
             ArrayList<DomainModels> list = new ArrayList<>();
-
+//            list.add(new DomainModels("WEB APPLICATION DEVELOPMENT"),R.drawable.webdevelopment);
+            list.add(new DomainModels("WEB DEVELOPMENT", R.drawable.webdevelopment));
             list.add(new DomainModels("MOBILE APPICATION DEVELOPMENT", R.drawable.appdevelopment));
             list.add(new DomainModels("CLOUD DEVELOPMENT", R.drawable.clouddevelopment));
             list.add(new DomainModels("CYBER SECURITY DEVELOPMENT", R.drawable.cybersecurity));
