@@ -24,7 +24,7 @@ public class HTMLWebsite extends Fragment {
 
 
     }
-    TextView imageView1;
+    TextView textView, textView1, textView2,textView3,textView4;
 
 
 
@@ -33,8 +33,11 @@ public class HTMLWebsite extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_h_t_m_l_website, container, false);
-        imageView1 = view.findViewById(R.id.WebResource1);
-        imageView1.setOnClickListener(new View.OnClickListener() {
+        textView = view.findViewById(R.id.WebResource1);
+        textView1 = view.findViewById(R.id.WebResource2);
+        textView2 = view.findViewById(R.id.WebResource3);
+        textView3 = view.findViewById(R.id.WebResource4);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gotoUrl("https://www.w3schools.com/html/default.asp");
@@ -42,14 +45,34 @@ public class HTMLWebsite extends Fragment {
 //                startActivity(intent);
             }
 
-            private void gotoUrl(String s) {
-                Uri uri = Uri.parse(s);
-                startActivity(new Intent(Intent.ACTION_VIEW,uri));
-            }
 
+        });
+        textView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.javatpoint.com/html-tutorial");
+            }
+        });
+
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.freecodecamp.org/news/tag/html/");
+            }
+        });
+
+        textView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.tutorialspoint.com/html/index.htm");
+            }
         });
 
         return view;
+    }
+    public void gotoUrl(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
 
 //    private void gotoUrl(String s) {

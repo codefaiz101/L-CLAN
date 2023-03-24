@@ -36,7 +36,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/WebResource1"
+                            android:id="@+id/YtResource1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="# Rank 1 (CodeWithHarry)"
@@ -77,7 +77,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/WebResource2"
+                            android:id="@+id/YtResource2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="# Rank 2 (Apna College)"
@@ -117,7 +117,7 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <TextView
-                            android:id="@+id/WebResource3"
+                            android:id="@+id/YtResource3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="# Rank 3 (Anuj Bhaia)"
@@ -158,7 +158,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/WebResource4"
+                            android:id="@+id/YtResource4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="# Rank 4 (Others)"
