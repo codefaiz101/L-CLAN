@@ -1,21 +1,20 @@
 package com.example.l_clan.Domains.WebDevelopment.Frontend;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.l_clan.Adapter.FrontendAdapter;
 import com.example.l_clan.Classes.RecyclerItemClickListener;
 import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.FrontendFragment;
-import com.example.l_clan.Models.DomainModels;
 import com.example.l_clan.Models.FrontendModels;
-import com.example.l_clan.OtherActivities.MainActivity2;
 import com.example.l_clan.R;
+import com.example.l_clan.bottomnavigation.BottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.CSSBottomNavigationActivity;
 
 import java.util.ArrayList;
 
@@ -52,11 +51,11 @@ public class FrontendTechnologyActivity extends AppCompatActivity {
             public void onItemClick(View view, int position) {
                 switch (position){
                     case 0:
-                        Intent intent = new Intent(getApplicationContext(), FrontendFragment.class);
+                        Intent intent = new Intent(getApplicationContext(), BottomNavigationActivity.class);
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intent1 = new Intent(getApplicationContext(), FrontendFragment.class);
+                        Intent intent1 = new Intent(getApplicationContext(), CSSBottomNavigationActivity.class);
                         startActivity(intent1);
                         break;
                     case 2:

@@ -2,28 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".Domains.WebDevelopment.Frontend.Fragment.FrontendFragment">
 
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:layout_width="135dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:text="Please Click on Website  to get Website Resources"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="135dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="130dp"-->
+<!--            android:text="Please Click on Youtube  to get Youtube Resources"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="590dp"-->
+<!--        android:orientation="horizontal">-->
+<!--    </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-
+        android:layout_height="match_parent"
+        android:id="@+id/htmllinerlayout"
+        android:orientation="horizontal" >
         <Button
             android:id="@+id/websitesbtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:text="Websites"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:text="Websites" />
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/youtubebtn"
@@ -31,39 +58,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:text="Youtube"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:text="Youtube" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/htmllinerlayout"
-        android:orientation="vertical" >
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:text="Please Click on Website  to get Website Resources"
-            android:layout_marginTop="25dp"
-            />
-
-        <TextView
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="130dp"
-            android:text="Please Click on Youtube  to get Youtube Resources"
-                        android:layout_marginTop="25dp"
-        />
-
-
+            android:textStyle="bold" />
     </LinearLayout>
 
 

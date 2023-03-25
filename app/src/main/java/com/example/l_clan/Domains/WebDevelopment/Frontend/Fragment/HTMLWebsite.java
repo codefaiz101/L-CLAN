@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,7 @@ public class HTMLWebsite extends Fragment {
 
 
     }
-    TextView textView, textView1, textView2,textView3,textView4;
+
 
 
 
@@ -33,11 +34,13 @@ public class HTMLWebsite extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_h_t_m_l_website, container, false);
-        textView = view.findViewById(R.id.WebResource1);
-        textView1 = view.findViewById(R.id.WebResource2);
-        textView2 = view.findViewById(R.id.WebResource3);
-        textView3 = view.findViewById(R.id.WebResource4);
-        textView.setOnClickListener(new View.OnClickListener() {
+        ImageView imageView = view.findViewById(R.id.webResourceimage1);
+        ImageView imageView1 = view.findViewById(R.id.webResourceimage2);
+        ImageView imageView2 = view.findViewById(R.id.webResourceimage3);
+        ImageView imageView3 = view.findViewById(R.id.webResourceimage4);
+
+
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gotoUrl("https://www.w3schools.com/html/default.asp");
@@ -47,21 +50,21 @@ public class HTMLWebsite extends Fragment {
 
 
         });
-        textView1.setOnClickListener(new View.OnClickListener() {
+        imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gotoUrl("https://www.javatpoint.com/html-tutorial");
             }
         });
 
-        textView2.setOnClickListener(new View.OnClickListener() {
+        imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gotoUrl("https://www.freecodecamp.org/news/tag/html/");
             }
         });
 
-        textView3.setOnClickListener(new View.OnClickListener() {
+        imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gotoUrl("https://www.tutorialspoint.com/html/index.htm");

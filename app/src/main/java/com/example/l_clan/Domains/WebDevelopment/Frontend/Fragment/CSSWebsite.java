@@ -6,63 +6,64 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.example.l_clan.R;
 
-import org.w3c.dom.Text;
+
+public class CSSWebsite extends Fragment {
 
 
-public class HTMLYoutube extends Fragment {
+    public CSSWebsite(){
 
-
-
-    public HTMLYoutube() {
-        // Required empty public constructor
     }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_h_t_m_l_youtube, container, false);
-        ImageView imageView = view.findViewById(R.id.YtResourceimage1);
-        ImageView imageView2 = view.findViewById(R.id.YtResourceimage3);
-        ImageView imageView1 = view.findViewById(R.id.YtResourceimage2);
-        ImageView imageView3 = view.findViewById(R.id.YtResourceimage4);
+        View view = inflater.inflate(R.layout.fragment_c_s_s_website, container, false);
+        ImageView imageView= view.findViewById(R.id.CSSResourceimage1);
+        ImageView imageView1= view.findViewById(R.id.CSSResourceimage2);
+        ImageView imageView2= view.findViewById(R.id.CSSResourceimage3);
+        ImageView imageView3= view.findViewById(R.id.CSSResourceimage4);
+        ImageView imageView4 = view.findViewById(R.id.CSSResourceimage5);
+
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                gotoUrl("https://www.youtube.com/watch?v=BsDoLVMnmZs");
+            public void onClick(View view) {
+                gotoUrl("https://www.w3schools.com/w3css/defaulT.asp");
             }
         });
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://www.youtube.com/watch?v=HcOc7P5BMi4");
+                gotoUrl("https://www.geeksforgeeks.org/css/");
             }
         });
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://www.youtube.com/playlist?list=PLhzIaPMgkbxDsPU7jxB_XF_UoToJjpwxM");
+                gotoUrl("https://www.javatpoint.com/css-tutorial");
+
             }
         });
-
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://www.youtube.com/playlist?list=PLjpp5kBQLNTSQqbELPhas4fOEHvO8nO5M");
+                gotoUrl("https://www.freecodecamp.org/news/learn-css/");
+
             }
         });
-
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.tutorialspoint.com/css/index.htm");
+            }
+        });
         return view;
     }
     public void gotoUrl(String s) {

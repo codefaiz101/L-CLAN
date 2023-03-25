@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="20dp"
-    tools:context=".Domains.WebDevelopment.Frontend.Fragment.HTMLYoutube">
+    tools:context=".Domains.WebDevelopment.Frontend.Fragment.HTMLWebsite">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -36,10 +36,10 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/YtResource1"
+                            android:id="@+id/CSSYtResource1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="# Rank 1 (CodeWithHarry)"
+                            android:text="# Rank 1(Recommended)"
                             android:layout_marginTop="2dp"
                             android:background="#28b0ff"
                             android:textColor="@color/white"
@@ -48,7 +48,7 @@
                             />
 
                         <ImageView
-                            android:id="@+id/YtResourceimage1"
+                            android:id="@+id/CSSYtResourceimage1"
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
                             android:scaleType="centerCrop"
@@ -77,10 +77,10 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/YtResource2"
+                            android:id="@+id/CSSYtResource2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="# Rank 2 (Apna College)"
+                            android:text="# Rank 2"
                             android:layout_marginTop="2dp"
                             android:background="#28b0ff"
                             android:textColor="@color/white"
@@ -89,7 +89,7 @@
                             />
 
                         <ImageView
-                            android:id="@+id/YtResourceimage2"
+                            android:id="@+id/CSSYtResourceimage2"
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
                             android:scaleType="centerCrop"
@@ -117,10 +117,10 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <TextView
-                            android:id="@+id/YtResource3"
+                            android:id="@+id/CSSYtResource3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="# Rank 3 (Anuj Bhaia)"
+                            android:text="# Rank 3"
                             android:layout_marginTop="2dp"
                             android:background="#28b0ff"
                             android:textColor="@color/white"
@@ -129,7 +129,7 @@
                             />
 
                         <ImageView
-                            android:id="@+id/YtResourceimage3"
+                            android:id="@+id/CSSYtResourceimage3"
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
                             android:scaleType="centerCrop"
@@ -158,10 +158,10 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/YtResource4"
+                            android:id="@+id/CSSYtResource4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="# Rank 4 (Tech Gun)"
+                            android:text="# Rank 4"
                             android:layout_marginTop="2dp"
                             android:background="#28b0ff"
                             android:textColor="@color/white"
@@ -170,18 +170,62 @@
                             />
 
                         <ImageView
-                            android:id="@+id/YtResourceimage4"
+                            android:id="@+id/CSSYtResourceimage4"
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
                             android:scaleType="centerCrop"
                             app:srcCompat="@drawable/youtube12" />
 
 
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="235dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/CSSYtResource5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 5"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/CSSYtResourceimage5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/youtube12" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="HI this youtube fragement"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textSize="55dp"-->
+    <!--        android:gravity="center_horizontal"/>-->
 
 </FrameLayout>
