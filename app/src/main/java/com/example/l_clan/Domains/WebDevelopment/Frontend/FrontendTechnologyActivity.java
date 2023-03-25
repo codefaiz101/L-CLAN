@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l_clan.Adapter.FrontendAdapter;
 import com.example.l_clan.Classes.RecyclerItemClickListener;
-import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.FrontendFragment;
 import com.example.l_clan.Models.FrontendModels;
 import com.example.l_clan.R;
 import com.example.l_clan.bottomnavigation.BottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.CSSBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.JavaScriptBottomNavgationActivity;
 
 import java.util.ArrayList;
 
@@ -59,27 +59,27 @@ public class FrontendTechnologyActivity extends AppCompatActivity {
                         startActivity(intent1);
                         break;
                     case 2:
-                        Intent intent2 = new Intent(getApplicationContext(), FrontendFragment.class);
+                        Intent intent2 = new Intent(getApplicationContext(), JavaScriptBottomNavgationActivity.class);
                         startActivity(intent2);
                         break;
                     case 3:
-                        Intent intent3 = new Intent(getApplicationContext(), FrontendFragment.class);
+                        Intent intent3 = new Intent(getApplicationContext(), BottomNavigationActivity.class);
                         startActivity(intent3);
                         break;
                     case 4:
-                        Intent intent4 = new Intent(getApplicationContext(), FrontendFragment.class);
+                        Intent intent4 = new Intent(getApplicationContext(), BottomNavigationActivity.class);
                         startActivity(intent4);
                         break;
                     case 5:
-                        Intent intent5 = new Intent(getApplicationContext(), FrontendFragment.class);
+                        Intent intent5 = new Intent(getApplicationContext(), BottomNavigationActivity.class);
                         startActivity(intent5);
                         break;
                     case 6:
-                        Intent intent6 = new Intent(getApplicationContext(), FrontendFragment.class);
+                        Intent intent6 = new Intent(getApplicationContext(), BottomNavigationActivity.class);
                         startActivity(intent6);
                         break;
                     default:
-                        Intent intent7 = new Intent(getApplicationContext(), FrontendFragment.class);
+                        Intent intent7 = new Intent(getApplicationContext(), BottomNavigationActivity.class);
                         startActivity(intent7);
                 }
             }

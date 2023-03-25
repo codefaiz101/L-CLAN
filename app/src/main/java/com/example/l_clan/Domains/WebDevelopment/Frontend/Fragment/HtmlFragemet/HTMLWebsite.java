@@ -1,4 +1,4 @@
-package com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment;
+package com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.HtmlFragemet;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -26,9 +26,6 @@ public class HTMLWebsite extends Fragment {
 
     }
 
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -38,6 +35,7 @@ public class HTMLWebsite extends Fragment {
         ImageView imageView1 = view.findViewById(R.id.webResourceimage2);
         ImageView imageView2 = view.findViewById(R.id.webResourceimage3);
         ImageView imageView3 = view.findViewById(R.id.webResourceimage4);
+        ImageView imageView4 = view.findViewById(R.id.webResourceimage5);
 
 
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -53,20 +51,30 @@ public class HTMLWebsite extends Fragment {
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://www.javatpoint.com/html-tutorial");
+
+
+                gotoUrl("https://www.geeksforgeeks.org/html/");
             }
+
         });
 
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://www.freecodecamp.org/news/tag/html/");
+                gotoUrl("https://www.javatpoint.com/html-tutorial");
             }
         });
 
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                gotoUrl("https://www.freecodecamp.org/news/tag/html/");
+
+            }
+        });
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 gotoUrl("https://www.tutorialspoint.com/html/index.htm");
             }
         });

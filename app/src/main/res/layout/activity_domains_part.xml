@@ -4,10 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Domains.DomainsPartActivity">
+    tools:context=".Domains.DomainsPartActivity"
+    android:orientation="vertical">
 
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="110dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:fontFamily="@font/riginalsurferregular"-->
+<!--        android:gravity="center"-->
+<!--        android:text="DOMAINS"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#28b0ff"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/riginalsurferregular"
+            android:gravity="center"
+            android:text="DOMAINS"
+            android:padding="1dp"
+            android:layout_marginStart="13dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+           />
+
+    </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/recyclerview"

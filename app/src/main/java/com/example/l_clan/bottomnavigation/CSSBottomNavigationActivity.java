@@ -5,8 +5,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.CSSWebsite;
-import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.CSSYoutube;
+import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.CSSFragment.CSSWebsite;
+import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.CSSFragment.CSSYoutube;
 import com.example.l_clan.R;
 import com.example.l_clan.databinding.ActivityCssbottomNavigation2Binding;
 
