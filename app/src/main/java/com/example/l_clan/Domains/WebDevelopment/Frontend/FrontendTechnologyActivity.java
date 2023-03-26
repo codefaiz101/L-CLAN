@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l_clan.Adapter.FrontendAdapter;
@@ -15,6 +16,8 @@ import com.example.l_clan.R;
 import com.example.l_clan.bottomnavigation.BottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.CSSBottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.JavaScriptBottomNavgationActivity;
+import com.example.l_clan.bottomnavigation.ReactjsBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.TailwindCssNavaigationActivity;
 
 import java.util.ArrayList;
 
@@ -40,7 +43,7 @@ public class FrontendTechnologyActivity extends AppCompatActivity {
         FrontendAdapter adapter = new FrontendAdapter(list,this);
         recyclerView.setAdapter(adapter);
 
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(FrontendTechnologyActivity.this,LinearLayoutManager.HORIZONTAL,false);
 //        recyclerView.setLayoutManager(layoutManager);
         GridLayoutManager layoutManager = new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(layoutManager);
@@ -63,7 +66,7 @@ public class FrontendTechnologyActivity extends AppCompatActivity {
                         startActivity(intent2);
                         break;
                     case 3:
-                        Intent intent3 = new Intent(getApplicationContext(), BottomNavigationActivity.class);
+                        Intent intent3 = new Intent(getApplicationContext(), ReactjsBottomNavigationActivity.class);
                         startActivity(intent3);
                         break;
                     case 4:
@@ -71,7 +74,7 @@ public class FrontendTechnologyActivity extends AppCompatActivity {
                         startActivity(intent4);
                         break;
                     case 5:
-                        Intent intent5 = new Intent(getApplicationContext(), BottomNavigationActivity.class);
+                        Intent intent5 = new Intent(getApplicationContext(), TailwindCssNavaigationActivity.class);
                         startActivity(intent5);
                         break;
                     case 6:

@@ -74,21 +74,21 @@ There are many career paths in web development, including front-end developer, b
     <string name="backend_string">
 
         <font size="20"><b>BACKEND DEVELOPMENT</b></font>\n\n
-       " Backend development refers to the server-side of web development, where the server-side code is written to manage the application's database, logic, and operations. Backend developers are responsible for building and maintaining the server-side of web applications, such as the server, database, and application logic."
+       " Backend development refers to the server-side of web development, where the server-side code is written to manage the application's database, logic, and operations. Backend developers are responsible for building and maintaining the server-side of web applications, such as the server, database, and application logic."\n\n
 
-"The backend development process typically involves several stages, including designing the database schema, writing server-side code in a programming language such as Python, Java, Ruby, or Node.js, creating APIs (Application Programming Interfaces) to communicate with the frontend, and testing and debugging the code."
+"The backend development process typically involves several stages, including designing the database schema, writing server-side code in a programming language such as Python, Java, Ruby, or Node.js, creating APIs (Application Programming Interfaces) to communicate with the frontend, and testing and debugging the code."\n\n
 
 "Some of the key concepts and technologies used in backend development include:"
 
-"Server: A computer or a software program that provides services to other computers or programs over a network. Backend developers use servers to run their applications and manage data."
+"Server: A computer or a software program that provides services to other computers or programs over a network. Backend developers use servers to run their applications and manage data."\n\n
 
-"Database: A system that stores and organizes data in a structured way, often using a language like SQL. Backend developers design and maintain databases to store and retrieve data for their applications."
+"Database: A system that stores and organizes data in a structured way, often using a language like SQL. Backend developers design and maintain databases to store and retrieve data for their applications."\n\n
 
-"API: A set of rules and protocols used to build software applications. APIs allow different software programs to communicate with each other."
+"API: A set of rules and protocols used to build software applications. APIs allow different software programs to communicate with each other."\n\n
 
-"Frameworks: A set of tools and libraries used to build software applications. Backend developers often use frameworks to speed up development and ensure code consistency."
+"Frameworks: A set of tools and libraries used to build software applications. Backend developers often use frameworks to speed up development and ensure code consistency."\n\n
 
-"Cloud computing: A model of delivering computing services over the internet. Backend developers often use cloud platforms like AWS, Azure, or Google Cloud to deploy and scale their applications."
+"Cloud computing: A model of delivering computing services over the internet. Backend developers often use cloud platforms like AWS, Azure, or Google Cloud to deploy and scale their applications."\n\n
 
 "In summary, backend development is a crucial aspect of web development that focuses on building and maintaining the server-side of web applications. It involves designing databases, writing server-side code, creating APIs, and testing and debugging the code."\n\n
       <font size="20"><b> "Visit Down To Get Best Resources." </b></font>

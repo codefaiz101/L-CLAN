@@ -27,55 +27,258 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="35dp"
                 android:gravity="center"
-                android:textStyle="bold"
                 android:justificationMode="inter_word"
-                android:text="@string/backend_string" />
-
-
-            <ScrollView
+                android:text="@string/backend_string"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/JavaText"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:text="BACKEND TECHNOLOGY"
+                android:layout_marginTop="2dp"
+                android:background="#28b0ff"
+                android:textColor="#ffffff"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/PGL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1] PROGRAMMING LANGUAGES"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                android:textStyle="bold"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ProgrammingRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:scrollbars="horizontal"
+                android:scaleType="centerInside"
+                tools:listitem="@layout/backendsinglerv" />
 
-                <LinearLayout
+            <TextView
+                android:id="@+id/FRM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2] FRAMEWORKS"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                android:textStyle="bold"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/FrameworkRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:scrollbars="horizontal"
+                android:scaleType="centerInside"
+                tools:listitem="@layout/fremworkstylesingle" />
+            <TextView
+                android:id="@+id/DBMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3] DATABASES"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                android:textStyle="bold"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/DBMSRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:scrollbars="horizontal"
+                android:scaleType="centerInside"
+                tools:listitem="@layout/dbmssinglerecyclerview" />
+
+            <TextView
+                android:id="@+id/API"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4] APIs"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="205dp">
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
 
-                    <androidx.cardview.widget.CardView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="5dp"
-                        app:cardCornerRadius="5dp"
-                        app:cardElevation="5dp">
+                        android:orientation="vertical">
 
-                        <LinearLayout
+                        <ImageView
+                            android:id="@+id/APIImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/apis" />
+
+                        <TextView
+                            android:id="@+id/APIText"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_height="wrap_content"
+                            android:text="APIs"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="#ffffff"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                            <ImageView
-                                android:id="@+id/Frontendtechnology"
-                                android:layout_width="wrap_content"
-                                android:layout_height="180dp"
-                                android:scaleType="fitXY"
-                                app:srcCompat="@drawable/backendtechnology" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/SER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5] WEB SERVERS"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                android:textStyle="bold"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ServerRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:scrollbars="horizontal"
+                android:scaleType="centerInside"
+                tools:listitem="@layout/serversinglerecyclerlayout" />
 
-                            <TextView
-                                android:id="@+id/Frontendtechnologytext"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="BACKEND TECHNOLOGIES"
-                                android:layout_marginTop="2dp"
-                                android:background="#28b0ff"
-                                android:textColor="@color/white"
-                                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                                android:textStyle="bold"
-                                />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-            </ScrollView>
+            <TextView
+                android:id="@+id/VC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6] VERSION CONTROL SYSTEM"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/VCImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/git" />
+
+                        <TextView
+                            android:id="@+id/VCText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="APIs"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="#ffffff"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7] TESTING TOOLS"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                android:textStyle="bold"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/TTRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:scrollbars="horizontal"
+                android:scaleType="centerInside"
+                tools:listitem="@layout/ttsinglerecyclerlayout" />
+
         </LinearLayout>
 
     </ScrollView>
 </RelativeLayout>
+
+
+
+    <!--            <ScrollView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_marginTop="10dp"-->
+    <!--                    android:layout_height="205dp">-->
+
+    <!--                    <androidx.cardview.widget.CardView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        app:cardCornerRadius="5dp"-->
+    <!--                        app:cardElevation="5dp">-->
+
+    <!--                        <LinearLayout-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="match_parent"-->
+    <!--                            android:orientation="vertical">-->
+
+    <!--                            <ImageView-->
+    <!--                                android:id="@+id/Frontendtechnology"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="180dp"-->
+    <!--                                android:scaleType="fitXY"-->
+    <!--                                app:srcCompat="@drawable/backendtechnology" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/Frontendtechnologytext"-->
+    <!--                                android:layout_width="match_parent"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:text="BACKEND TECHNOLOGIES"-->
+    <!--                                android:layout_marginTop="2dp"-->
+    <!--                                android:background="#28b0ff"-->
+    <!--                                android:textColor="@color/white"-->
+    <!--                                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"-->
+    <!--                                android:textStyle="bold"-->
+    <!--                                />-->
+    <!--                        </LinearLayout>-->
+    <!--                    </androidx.cardview.widget.CardView>-->
+    <!--                </LinearLayout>-->
+    <!--            </ScrollView>-->

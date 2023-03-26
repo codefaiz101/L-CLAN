@@ -8,11 +8,10 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/FrontendView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/FrontendView"
         android:padding="12dp"
         android:scaleType="centerInside"
-        tools:listitem="@layout/ftechnologysinglelayout"
-        />
+        tools:listitem="@layout/ftechnologysinglelayout" />
 </LinearLayout>

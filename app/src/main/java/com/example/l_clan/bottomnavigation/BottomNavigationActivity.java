@@ -28,6 +28,9 @@ public class BottomNavigationActivity extends AppCompatActivity {
                 case R.id.navigation_youtube:
                     replaceFragment(new HTMLYoutube());
                     break;
+//                case R.id.navigation_youtube1:
+//                    replaceFragment(new HTMLYoutube());
+//                    break;
             }
             return  true;
 

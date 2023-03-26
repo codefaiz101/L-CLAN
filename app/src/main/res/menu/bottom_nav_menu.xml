@@ -11,5 +11,9 @@
         android:icon="@drawable/youtube"
         android:title="Youtube" />
 
+<!--    <item-->
+<!--        android:id="@+id/navigation_youtube1"-->
+<!--        android:icon="@drawable/youtube"-->
+<!--        android:title="Youtube" />-->
 
 </menu>
