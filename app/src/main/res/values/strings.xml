@@ -114,4 +114,78 @@ There are many career paths in web development, including front-end developer, b
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_cssbottom_navigation">CSSBottomNavigationActivity</string>
 
+    <!--    ANDROID DEVELOPMENT - -->
+    <!--    To add roadmap in android application development-->
+    <string name="title_roadmap_app_development">\n\n"As an Android developer, there are various technologies and tools you need to be familiar with to build high-quality apps. Here\'s a general roadmap you can follow to become proficient in Android development:"\n\n\n\n
+    <b>"STEP 1 -: Learn Java or Kotlin"</b>\n\n
+    "Java is the primary programming language used for Android development. However, Kotlin is rapidly gaining popularity, so learning both would be an added advantage."
+
+    </string>
+
+    <!--    To add second step information-->
+    <string name="step_2_app_development"><b>\n\n"STEP 2 -:Understanding Android Studio"</b>\n\n
+    "Android Studio is the official Integrated Development Environment (IDE) for Android development. It provides a complete environment to create, test, and deploy Android applications. Therefore, you need to be familiar with the various features of Android Studio."\n
+
+    </string>
+
+    <!--    To add third step information-->
+    <string name="step_3_app_development"><b>\n\n"STEP 3 -:User Interface Design"</b>\n\n
+"As an Android developer, you must understand the basics of UI/UX design. You can start by learning XML and using Android\'s Layout Editor to build UI layouts."
+
+    </string>
+
+
+    <!--    To add fourth step information-->
+    <string name="step_4_app_development"><b>\n\n"STEP 4 -:Learn Android Components"</b>\n\n
+"Android development revolves around components. These include Activities, Fragments, Services, Broadcast Receivers, and Content Providers. Therefore, you must have a clear understanding of each component and their roles."
+
+    </string>
+
+    <!--    To add fifth step information-->
+    <string name="step_5_app_development"><b>\n\n"STEP 5 -:Database Management"</b>\n\n
+"Most Android applications require the use of databases to store and manage data. Therefore, you must learn how to use SQLite, the default database engine for Android."
+
+    </string>
+
+    <!--    To add sixth step information-->
+    <string name="step_6_app_development"><b>\n\n"STEP 6 -:Networking and APIs"</b>\n\n
+"Android applications often interact with web services via APIs. Therefore, you must have knowledge of networking and APIs to retrieve data from web servers. "
+
+    </string>
+
+    <!--    To add seventh step information-->
+    <string name="step_7_app_development"><b>\n\n"STEP 7 -:Security and Performance"</b>\n\n
+"As an Android developer, you must consider the security of your applications. You must also ensure that your application is optimized for performance."\n\n
+
+    </string>
+
+    <!--    To add eighth step information-->
+    <string name="step_8_app_development"><b>\n\n"STEP 8 -:Cross-Platform Development"</b>\n\n
+"Learning how to develop applications that can run on multiple platforms is an added advantage. You can use frameworks such as React Native or Flutter to develop cross-platform applications.\n\n\n"
+
+    </string>
+
+    <!--    To add nineth step information-->
+    <string name="step_9_app_development"><b>\n\n"STEP 9 -:Continuous Learning"</b>\n\n
+    "Android development is continually evolving. Therefore, you must be willing to keep learning new technologies and tools to stay updated."\n\n\n\n
+    <b>"CONCLUSION -:"</b>\n\n
+    "In conclusion, Android development is an exciting and rapidly evolving field that provides many opportunities for developers to create innovative and useful mobile applications. With the increasing popularity of smartphones and tablets, Android has become one of the most popular platforms for mobile app development."\n\n
+
+    </string>
+
+    <!--    Title SAMPLE STRING-->
+    <string name="title_activity_app_development"><b>"ANDROID DEVELOPMENT"</b></string>
+
+    <!--    WRITNG SAMPLE STRING-->
+    <string name="large_text_mobile"><b>ANDROID DEVELOPMENT</b></string>
+
+    <!--    Information about Java-->
+    <string name="java_information">"Java is one of the primary programming languages used in Android development. Android is an open-source mobile operating system developed by Google, and it is based on the Linux kernel. Java is used to develop the applications that run on the Android platform."
+    "Android provides a comprehensive set of libraries and tools for developers to create applications using Java. Some of the key libraries include the Android SDK, which provides the necessary tools and APIs to create Android applications, and the Android Studio IDE, which is used to develop, debug, and deploy Android applications."
+    "Java provides several advantages for Android development, including its object-oriented programming model, its platform independence, and its large community of developers and resources. Java also offers features such as garbage collection, multithreading, and memory management that are useful for developing complex Android applications."
+    "However, it is worth noting that Kotlin, another programming language developed by JetBrains, is becoming increasingly popular among Android developers due to its improved features and better interoperability with Java. Nonetheless, Java remains a crucial component of the Android development ecosystem, and it is still widely used by developers worldwide."
+    </string>
+
+    <string name="java_title_">" Java For Android App Development"</string>
+
 </resources>

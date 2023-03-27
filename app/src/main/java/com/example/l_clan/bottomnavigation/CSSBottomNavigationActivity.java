@@ -20,10 +20,10 @@ public class CSSBottomNavigationActivity extends AppCompatActivity {
         replaceFragment(new CSSWebsite());
         binding.cssbottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
-                case R.id.navigation_css_website:
+                case R.id.navigation_website:
                     replaceFragment(new CSSWebsite());
                     break;
-                case R.id.navigation_css_youtube:
+                case R.id.navigation_youtube:
                     replaceFragment(new CSSYoutube());
                     break;
             }
