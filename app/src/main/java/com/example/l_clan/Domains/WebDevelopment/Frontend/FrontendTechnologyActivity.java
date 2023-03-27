@@ -6,19 +6,18 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l_clan.Adapter.FrontendAdapter;
 import com.example.l_clan.Classes.RecyclerItemClickListener;
 import com.example.l_clan.Models.FrontendModels;
 import com.example.l_clan.R;
-import com.example.l_clan.bottomnavigation.AngularjsBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.FrontendBottomNavigationActivities.AngularjsBottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.BottomNavigationActivity;
-import com.example.l_clan.bottomnavigation.CSSBottomNavigationActivity;
-import com.example.l_clan.bottomnavigation.JavaScriptBottomNavgationActivity;
-import com.example.l_clan.bottomnavigation.ReactjsBottomNavigationActivity;
-import com.example.l_clan.bottomnavigation.TailwindCssNavaigationActivity;
+import com.example.l_clan.bottomnavigation.FrontendBottomNavigationActivities.CSSBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.FrontendBottomNavigationActivities.JavaScriptBottomNavgationActivity;
+import com.example.l_clan.bottomnavigation.FrontendBottomNavigationActivities.ReactjsBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.FrontendBottomNavigationActivities.TailwindCssNavaigationActivity;
 
 import java.util.ArrayList;
 

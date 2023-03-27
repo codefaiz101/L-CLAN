@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -12,100 +12,103 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LCLAN"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".Domains.AndroidDevelopment.AppActivity"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
+        tools:targetApi="31" >
         <activity
-            android:name=".bottomnavigation.TailwindCssNavaigationActivity"
+            android:name=".BackendJavaBottomNavigationActivity"
+            android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".Domains.AndroidDevelopment.AppActivity" -->
+        <!-- android:exported="false"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.lib_name" -->
+        <!-- android:value="" /> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".bottomnavigation.FrontendBottomNavigationActivities.TailwindCssNavaigationActivity"
             android:exported="false" />
         <activity
-            android:name=".bottomnavigation.ReactjsBottomNavigationActivity"
+            android:name=".bottomnavigation.FrontendBottomNavigationActivities.ReactjsBottomNavigationActivity"
             android:exported="false" />
         <activity
             android:name=".Domains.AndroidDevelopment.Flutter.FlutterActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Domains.AndroidDevelopment.ReactNative.ReactNativeActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Domains.AndroidDevelopment.Security.SecurityActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Domains.AndroidDevelopment.Networking.NetworkingActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Domains.AndroidDevelopment.AndroidComponents.AndroidComponentsActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Domains.AndroidDevelopment.DatabaseManagement.DatabaseManagementActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Domains.AndroidDevelopment.XML.XMLActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Domains.AndroidDevelopment.AndroidStudio.AndroidStudioActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Domains.AndroidDevelopment.Kotlin.KotlinActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Domains.AndroidDevelopment.Java.JavaActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".bottomnavigation.BooststrapBottonNavigationActivity"
-            android:exported="true">
+            android:name=".bottomnavigation.FrontendBottomNavigationActivities.BooststrapBottonNavigationActivity"
+            android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".bottomnavigation.AngularjsBottomNavigationActivity"
-            android:exported="true">
+            android:name=".bottomnavigation.FrontendBottomNavigationActivities.AngularjsBottomNavigationActivity"
+            android:exported="true" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -119,10 +122,10 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".bottomnavigation.JavaScriptBottomNavgationActivity"
+            android:name=".bottomnavigation.FrontendBottomNavigationActivities.JavaScriptBottomNavgationActivity"
             android:exported="false" />
         <activity
-            android:name=".bottomnavigation.CSSBottomNavigationActivity"
+            android:name=".bottomnavigation.FrontendBottomNavigationActivities.CSSBottomNavigationActivity"
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".CSSBottomNavigationActivity" -->
         <!-- android:exported="false" -->
@@ -138,7 +141,7 @@
             android:name=".bottomnavigation.BottomNavigationActivity"
             android:exported="true"
             android:label="@string/title_activity_bottom_navbar"
-            android:theme="@style/Theme.LCLAN.NoActionBar">
+            android:theme="@style/Theme.LCLAN.NoActionBar" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -166,35 +169,35 @@
             android:name=".Domains.AndroidDevelopment.AppActivity"
             android:exported="true"
             android:label="@string/title_activity_android_development"
-            android:theme="@style/Theme.LCLAN.NoActionBar"
-         />
+            android:theme="@style/Theme.LCLAN.NoActionBar" />
         <activity
             android:name=".Domains.DomainsPartActivity"
-            android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            android:exported="true" >
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
-
         <activity
             android:name=".OtherActivities.MainActivity2"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".OtherActivities.coming_soon"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".OtherActivities.phnnovrf"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -202,14 +205,14 @@
         <activity
             android:name=".OtherActivities.first_page"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".OtherActivities.userprofile"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -217,28 +220,26 @@
         <activity
             android:name=".OtherActivities.signup_page"
             android:exported="false"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".OtherActivities.Dashboard"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".OtherActivities.MainActivity"
-            android:exported="true">
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
-
-
-             <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"

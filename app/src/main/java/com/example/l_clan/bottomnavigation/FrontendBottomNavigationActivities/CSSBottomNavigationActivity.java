@@ -1,4 +1,4 @@
-package com.example.l_clan.bottomnavigation;
+package com.example.l_clan.bottomnavigation.FrontendBottomNavigationActivities;
 
 import android.os.Bundle;
 

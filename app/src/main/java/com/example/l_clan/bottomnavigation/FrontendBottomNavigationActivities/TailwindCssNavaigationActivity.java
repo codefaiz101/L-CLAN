@@ -1,12 +1,10 @@
-package com.example.l_clan.bottomnavigation;
+package com.example.l_clan.bottomnavigation.FrontendBottomNavigationActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 
-import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.HtmlFragemet.HTMLWebsite;
-import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.HtmlFragemet.HTMLYoutube;
 import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.TailwindCSSFragment.TailwindCSSWebsite;
 import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.TailwindCSSFragment.TailwindCSSYoutube;
 import com.example.l_clan.R;

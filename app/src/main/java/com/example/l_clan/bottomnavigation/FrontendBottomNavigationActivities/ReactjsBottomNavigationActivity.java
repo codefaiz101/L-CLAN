@@ -1,16 +1,13 @@
-package com.example.l_clan.bottomnavigation;
+package com.example.l_clan.bottomnavigation.FrontendBottomNavigationActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 
-import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.HtmlFragemet.HTMLWebsite;
-import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.HtmlFragemet.HTMLYoutube;
 import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.ReactJsFragment.ReactJsWebsite;
 import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.ReactJsFragment.ReactJsYoutube;
 import com.example.l_clan.R;
-import com.example.l_clan.databinding.ActivityBottomNavigationBinding;
 import com.example.l_clan.databinding.ActivityReactjsBottomNavigationBinding;
 
 public class ReactjsBottomNavigationActivity extends AppCompatActivity {

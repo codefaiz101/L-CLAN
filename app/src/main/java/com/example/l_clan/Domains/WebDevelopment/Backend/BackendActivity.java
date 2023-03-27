@@ -23,6 +23,7 @@ import com.example.l_clan.Models.BackendModels.ProgramminglanguageModels;
 import com.example.l_clan.Models.BackendModels.ServerModels;
 import com.example.l_clan.Models.BackendModels.TTModels;
 import com.example.l_clan.R;
+import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendJavaBottomNavigationActivity;
 
 import java.util.ArrayList;
 
@@ -52,6 +53,43 @@ public class BackendActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         LinearLayoutManager layoutManager = new LinearLayoutManager(BackendActivity.this,LinearLayoutManager.HORIZONTAL,false);
         recyclerView.setLayoutManager(layoutManager);
+
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                switch (position){
+                    case 0:
+                        Intent intent = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        Intent intent1 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        startActivity(intent1);
+                        break;
+                    case 2:
+                        Intent intent2 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        startActivity(intent2);
+                        break;
+                    case 3:
+                        Intent intent3 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        startActivity(intent3);
+                        break;
+                    case 4:
+                        Intent intent4 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        startActivity(intent4);
+                        break;
+                    default:
+                        Intent intent5 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        startActivity(intent5);
+
+                }
+            }
+
+            @Override
+            public void onLongItemClick(View view, int position) {
+
+            }
+        }));
 
 
         //This is for Frameworks
@@ -113,19 +151,6 @@ public class BackendActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager5 = new LinearLayoutManager(BackendActivity.this,LinearLayoutManager.HORIZONTAL,false);
         recyclerView5.setLayoutManager(layoutManager5);
 
-//        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(View view, int position) {
-//                switch (position){
-//                    case 0:
-//                        Intent intent = new Intent(getApplicationContext(),)
-//                }
-//            }
-//
-//            @Override
-//            public void onLongItemClick(View view, int position) {
-//
-//            }
-//        }));
+
     }
 }
