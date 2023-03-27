@@ -49,8 +49,8 @@ public class FrameworksAdapter extends  RecyclerView.Adapter<FrameworksAdapter.v
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView1 = itemView.findViewById(R.id.DjangoImage);
-            textView = itemView.findViewById(R.id.DjangoText);
+            imageView1 = itemView.findViewById(R.id.jenkins_image);
+            textView = itemView.findViewById(R.id.jenkins_text);
         }
     }
 

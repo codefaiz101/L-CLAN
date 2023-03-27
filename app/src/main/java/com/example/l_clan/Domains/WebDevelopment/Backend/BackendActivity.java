@@ -10,12 +10,14 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 
 import com.example.l_clan.Adapter.BackendAdapters.DBMSAdapter;
+import com.example.l_clan.Adapter.BackendAdapters.DeploymentAdapter;
 import com.example.l_clan.Adapter.BackendAdapters.FrameworksAdapter;
 import com.example.l_clan.Adapter.BackendAdapters.ProgramminglanguageAdapter;
 import com.example.l_clan.Adapter.BackendAdapters.ServerAdapter;
 import com.example.l_clan.Adapter.BackendAdapters.TTAdapter;
 import com.example.l_clan.Classes.RecyclerItemClickListener;
 import com.example.l_clan.Models.BackendModels.DBMSModel;
+import com.example.l_clan.Models.BackendModels.DeploymentModel;
 import com.example.l_clan.Models.BackendModels.FrameworksModels;
 import com.example.l_clan.Models.BackendModels.ProgramminglanguageModels;
 import com.example.l_clan.Models.BackendModels.ServerModels;
@@ -30,6 +32,8 @@ public class BackendActivity extends AppCompatActivity {
   RecyclerView recyclerView1;
   RecyclerView recyclerView2;
   RecyclerView recyclerView4;
+  RecyclerView recyclerView5;
+
 
   RecyclerView recyclerView3;
     @Override
@@ -98,6 +102,16 @@ public class BackendActivity extends AppCompatActivity {
         recyclerView4.setAdapter(adapter4);
         LinearLayoutManager layoutManager4 = new LinearLayoutManager(BackendActivity.this,LinearLayoutManager.HORIZONTAL,false);
         recyclerView4.setLayoutManager(layoutManager4);
+
+        recyclerView5 = findViewById( R.id.DTRecycler);
+        ArrayList<DeploymentModel> list5 = new ArrayList<>();
+            list5.add(new DeploymentModel("KUBARANATES",R.drawable.kubernates_image));
+        list5.add(new DeploymentModel("DOCKER",R.drawable.docker_image));
+        list5.add(new DeploymentModel("JENKINS",R.drawable.jenkins_image));
+        DeploymentAdapter adapter5 = new DeploymentAdapter(list5, this) ;
+        recyclerView5.setAdapter(adapter5);
+        LinearLayoutManager layoutManager5 = new LinearLayoutManager(BackendActivity.this,LinearLayoutManager.HORIZONTAL,false);
+        recyclerView5.setLayoutManager(layoutManager5);
 
 //        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
 //            @Override

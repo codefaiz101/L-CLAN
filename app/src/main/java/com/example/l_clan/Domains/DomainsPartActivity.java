@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l_clan.Adapter.DomainAdapter;
 import com.example.l_clan.Classes.RecyclerItemClickListener;
-import com.example.l_clan.Domains.AndroidDevelopment.AndroidDevelopmentActivity;
+import com.example.l_clan.Domains.AndroidDevelopment.AppActivity;
 import com.example.l_clan.Domains.WebDevelopment.WebActivity;
 import com.example.l_clan.Models.DomainModels;
 import com.example.l_clan.OtherActivities.MainActivity2;
@@ -51,7 +51,7 @@ import java.util.ArrayList;
                             startActivity(intent);
                             break;
                         case 1:
-                            Intent intent1 = new Intent(getApplicationContext(), AndroidDevelopmentActivity.class);
+                            Intent intent1 = new Intent(getApplicationContext(), AppActivity.class);
                             startActivity(intent1);
                             break;
 

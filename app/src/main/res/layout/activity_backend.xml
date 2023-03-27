@@ -232,6 +232,25 @@
                 android:scaleType="centerInside"
                 tools:listitem="@layout/ttsinglerecyclerlayout" />
 
+            <TextView
+                android:id="@+id/DT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8] DEPLOYMENT TOOLS"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                android:textStyle="bold"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/DTRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:scrollbars="horizontal"
+                android:scaleType="centerInside"
+                tools:listitem="@layout/deploymentsinglelayout" />
+
         </LinearLayout>
 
     </ScrollView>

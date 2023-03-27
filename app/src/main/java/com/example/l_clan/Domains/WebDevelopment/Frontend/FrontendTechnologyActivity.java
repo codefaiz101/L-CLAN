@@ -13,6 +13,7 @@ import com.example.l_clan.Adapter.FrontendAdapter;
 import com.example.l_clan.Classes.RecyclerItemClickListener;
 import com.example.l_clan.Models.FrontendModels;
 import com.example.l_clan.R;
+import com.example.l_clan.bottomnavigation.AngularjsBottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.BottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.CSSBottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.JavaScriptBottomNavgationActivity;
@@ -70,7 +71,7 @@ public class FrontendTechnologyActivity extends AppCompatActivity {
                         startActivity(intent3);
                         break;
                     case 4:
-                        Intent intent4 = new Intent(getApplicationContext(), BottomNavigationActivity.class);
+                        Intent intent4 = new Intent(getApplicationContext(), AngularjsBottomNavigationActivity.class);
                         startActivity(intent4);
                         break;
                     case 5:
