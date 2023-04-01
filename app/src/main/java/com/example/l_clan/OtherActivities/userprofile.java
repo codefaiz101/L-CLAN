@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 //import com.example.l_clan.Domains.AndroidDevelopment.AndroidDevelopmentActivity;
 import com.example.l_clan.Domains.DomainsPartActivity;
+import com.example.l_clan.FinalBottom.FinalActivity;
 import com.example.l_clan.R;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -35,7 +36,7 @@ public class userprofile extends AppCompatActivity {
     }
 
     public void startlearning(View view) {
-        Intent intent = new Intent(userprofile.this, DomainsPartActivity.class);
+        Intent intent = new Intent(userprofile.this, FinalActivity.class);
         startActivity(intent);
     }
 
