@@ -14,10 +14,17 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendDjangoBottomNavigationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FinalBottom.FinalActivity"
             android:exported="false" />
         <activity
-            android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendJavaBottomNavigationActivity"
+            android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendJavaBottomNavigationActivity"
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".Domains.AndroidDevelopment.AppActivity" -->
         <!-- android:exported="false"> -->
@@ -171,15 +178,23 @@
             android:name=".Domains.AndroidDevelopment.AppActivity"
             android:exported="true"
             android:label="@string/title_activity_android_development"
-            android:theme="@style/Theme.LCLAN.NoActionBar" />
+            android:theme="@style/Theme.LCLAN.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Domains.DomainsPartActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".OtherActivities.MainActivity2"
@@ -236,12 +251,12 @@
             android:name=".OtherActivities.MainActivity"
             android:exported="true">
 
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
 
-             <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
 
             <meta-data
                 android:name="android.app.lib_name"

@@ -46,6 +46,8 @@
                 android:justificationMode="inter_word"
                 android:text="@string/large_text_mobile"
                 android:textStyle="bold"
+                android:padding="35px"
+                android:textSize="18dp"
                 tools:ignore="DuplicateIds" />
 
             <ScrollView
@@ -65,24 +67,35 @@
                         android:layout_height="254dp"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/android_development_roadmap" />
+
+
                 </LinearLayout>
             </ScrollView>
 
             <TextView
-                android:id="@+id/Andstep1"
+                android:id="@+id/Andtitle"
                 android:layout_width="match_parent"
-                android:layout_height="276dp"
+                android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
                 android:text="@string/title_roadmap_app_development"
                 android:textStyle="bold" />
+            
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/And_step"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:justificationMode="inter_word"
+                android:text="@string/step_1_app_development"
+                android:textStyle="bold" />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
 
                 <LinearLayout
-                    android:layout_width="170dp"
+                    android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:padding="2dp">
 
@@ -112,7 +125,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="#28b0ff"
-                                android:text="JAVA"
+                                android:text="1] JAVA"
                                 android:textColor="@color/white"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -120,7 +133,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="170dp"
+                    android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:padding="2dp">
 
@@ -149,16 +162,16 @@
                                 style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
+                                android:layout_marginTop="4dp"
                                 android:background="#28b0ff"
                                 android:scaleType="fitXY"
-                                android:text="KOTLIN"
+                                android:text="2] KOTLIN"
                                 android:textColor="@color/white"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
             <TextView
                 android:id="@+id/step2"
@@ -463,13 +476,13 @@
                 android:textStyle="bold"
                 tools:ignore="DuplicateIds" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
 
             <LinearLayout
-                android:layout_width="170dp"
+                android:layout_width="match_parent"
                 android:layout_height="190dp"
                 android:padding="2dp">
 
@@ -499,7 +512,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="#28b0ff"
-                            android:text="REACT NATIVE "
+                            android:text="1] REACT NATIVE "
                             android:textColor="@color/white"
                             android:textStyle="bold" />
                     </LinearLayout>
@@ -507,9 +520,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="170dp"
+                android:layout_width="match_parent"
                 android:layout_height="190dp"
-                android:padding="2dp">
+                android:padding="2dp"
+                android:layout_marginTop="10px">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -537,13 +551,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="#28b0ff"
-                            android:text="FLUTTER "
+                            android:text="2] FLUTTER "
                             android:textColor="@color/white"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
             <TextView
                 android:id="@+id/step9"

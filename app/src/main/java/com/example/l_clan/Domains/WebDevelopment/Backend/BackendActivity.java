@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 
 import com.example.l_clan.Adapter.BackendAdapters.DBMSAdapter;
 import com.example.l_clan.Adapter.BackendAdapters.DeploymentAdapter;
@@ -23,7 +22,7 @@ import com.example.l_clan.Models.BackendModels.ProgramminglanguageModels;
 import com.example.l_clan.Models.BackendModels.ServerModels;
 import com.example.l_clan.Models.BackendModels.TTModels;
 import com.example.l_clan.R;
-import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendJavaBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendJavaBottomNavigationActivity;
 
 import java.util.ArrayList;
 
@@ -34,8 +33,6 @@ public class BackendActivity extends AppCompatActivity {
   RecyclerView recyclerView2;
   RecyclerView recyclerView4;
   RecyclerView recyclerView5;
-
-
   RecyclerView recyclerView3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,7 +142,7 @@ public class BackendActivity extends AppCompatActivity {
         ArrayList<DeploymentModel> list5 = new ArrayList<>();
             list5.add(new DeploymentModel("KUBARANATES",R.drawable.kubernates_image));
         list5.add(new DeploymentModel("DOCKER",R.drawable.docker_image));
-        list5.add(new DeploymentModel("JENKINS",R.drawable.jenkins_image));
+        list5.add(new DeploymentModel("JENKINS ",R.drawable.jenkins_image));
         DeploymentAdapter adapter5 = new DeploymentAdapter(list5, this) ;
         recyclerView5.setAdapter(adapter5);
         LinearLayoutManager layoutManager5 = new LinearLayoutManager(BackendActivity.this,LinearLayoutManager.HORIZONTAL,false);

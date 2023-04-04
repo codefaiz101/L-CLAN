@@ -1,4 +1,4 @@
-package com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities;
+package com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
