@@ -1,0 +1,191 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">L-CLAN</string>
+    <string name="textfp1">\t\t\t\t\t<b> INFORMATION ABOUT JAVA </b>
+        \n
+        \t\t\t\t\t Java is a programming language and computing platform used for developing and running applications.
+\n
+        It was first released by Sun Microsystems in 1995 and has since become one of the most popular programming languages in use, particularly for client-server web applications, with a reported 10 million users.
+\n
+Java is a general-purpose, object-oriented language that is specifically designed to have as few implementation dependencies as possible. This means that Java programs can run on any device that has a Java Virtual Machine (JVM) installed, regardless of the underlying hardware and software.
+\n
+Java is a high-level language, meaning that it is easier to read and write compared to low-level languages, which are closer to the machine language that computers understand. Java is also a compiled language, which means that it is transformed into a form that is easier for computers to execute.
+\n
+Java is known for its simplicity, reliability, and scalability, making it an ideal choice for building large-scale applications. It is also used in a wide range of industries, including financial services, retail, and healthcare.</string>
+    <string name="textfp2">\t\t\t\t\t\t\t\t\t\t\t\t<b>  USES OF JAVA </b>
+\n
+        1) Web and application development: Java is a popular choice for building web and mobile applications, due to its platform-independence, scalability, and security features.
+\n
+2) Financial services: Java is widely used in the financial industry, particularly for building trading platforms, risk management systems, and other financial applications.
+\n
+3) Retail: Java is used in retail to build point-of-sale (POS) systems, inventory management systems, and other applications.
+\n
+4) Healthcare: Java is used to build healthcare information systems, such as electronic health record (EHR) systems, as well as other medical software.
+\n
+5) Big data: Java is often used in big data environments for tasks such as data processing and analysis.
+\n
+6) Android development: Java is the primary language used for building Android apps.
+\n
+7) Scientific applications: Java is used to build a variety of scientific and research applications, including simulations, data analysis tools, and more.
+\n
+8) Cloud computing: Java is a popular choice for building cloud-based applications due to its scalability and security features.
+    </string>
+
+    <string name="navigattion_open">open navigation drawer</string>
+    <string name="navigattion_close">close navigation drawer</string>
+    <string name="title_activity_web_development">WEB DEVELOPMENT</string>
+    <string name="large_text">
+        <font size="20"><b>"What is Web Development ?"
+            \n\n</b></font>
+
+         Web development is the process of creating websites, web applications, and other web-based software using various programming languages, frameworks, and tools. It involves the development of both front-end and back-end components of a website. \n\n
+
+Front-end development involves creating the visual and interactive elements of a website that users interact with, such as the layout, design, and functionality. This is typically done using languages such as HTML, CSS, and JavaScript, as well as various frameworks and libraries like React, Vue.js, and Angular.\n\n
+
+Back-end development involves creating the server-side of a website, which handles the processing of data, server-side scripting, and database management. This is typically done using languages such as PHP, Python, Ruby, and Node.js, as well as various frameworks and libraries like Django, Flask, and Express.js.\n\n
+
+Web development also involves the use of various tools and technologies such as web servers, APIs, databases, and content management systems (CMS) like WordPress, Drupal, and Joomla. Additionally, web developers must ensure that their websites are optimized for search engines, accessible to users with disabilities, and secure from cyber threats.\n\n
+
+There are many career paths in web development, including front-end developer, back-end developer, full-stack developer, web designer, and web content manager. Web development is a constantly evolving field, and staying up to date with the latest technologies and trends is essential for success.\n\n
+
+        <font size="20"><b>Road Map of Web Development.!</b></font>
+
+
+    </string>
+    <string name="example_string">
+    This is an example of a string with an image:
+    <br />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/roadmap.jpg" />
+</string>
+
+    <string name="frontend_string">
+
+       <font size="25"> <b>FRONTEND DEVELOPMENT</b></font>\n\n
+"Frontend development is the practice of creating the user-facing portion of a website or application. This includes designing the layout, interface, and interactions that users have with the site or app. Frontend developers use programming languages like HTML, CSS, and JavaScript to create web pages that are rendered in a user's browser.\n\n"
+
+"HTML (Hypertext Markup Language) is the backbone of a website and provides the structure and content for web pages. CSS (Cascading Style Sheets) is used to define the presentation of HTML elements, including layout, colors, fonts, and animations. JavaScript is a programming language used to create interactive and dynamic elements on a web page, such as dropdown menus, popups, and animations.\n\n"
+
+"Frontend developers also work with a variety of tools and frameworks, such as React, Angular, and Vue.js, to create complex web applications. These tools and frameworks allow developers to create reusable components and simplify the process of building dynamic user interfaces.\n\n"
+
+"In addition to technical skills, frontend developers need to have a strong understanding of user experience (UX) and user interface (UI) design principles. They should be able to collaborate effectively with designers, developers, and other stakeholders to create engaging and effective web applications.\n\n"
+
+"Overall, frontend development is a crucial aspect of creating modern web applications that provide a seamless and intuitive user experience.\n\n"
+      <font size="20"><b> "Visit Down To Get Best Resources." </b></font>
+    </string>
+    <string name="backend_string">
+
+        <font size="20"><b>BACKEND DEVELOPMENT</b></font>\n\n
+       " Backend development refers to the server-side of web development, where the server-side code is written to manage the application's database, logic, and operations. Backend developers are responsible for building and maintaining the server-side of web applications, such as the server, database, and application logic."\n\n
+
+"The backend development process typically involves several stages, including designing the database schema, writing server-side code in a programming language such as Python, Java, Ruby, or Node.js, creating APIs (Application Programming Interfaces) to communicate with the frontend, and testing and debugging the code."\n\n
+
+"Some of the key concepts and technologies used in backend development include:"
+
+"Server: A computer or a software program that provides services to other computers or programs over a network. Backend developers use servers to run their applications and manage data."\n\n
+
+"Database: A system that stores and organizes data in a structured way, often using a language like SQL. Backend developers design and maintain databases to store and retrieve data for their applications."\n\n
+
+"API: A set of rules and protocols used to build software applications. APIs allow different software programs to communicate with each other."\n\n
+
+"Frameworks: A set of tools and libraries used to build software applications. Backend developers often use frameworks to speed up development and ensure code consistency."\n\n
+
+"Cloud computing: A model of delivering computing services over the internet. Backend developers often use cloud platforms like AWS, Azure, or Google Cloud to deploy and scale their applications."\n\n
+
+"In summary, backend development is a crucial aspect of web development that focuses on building and maintaining the server-side of web applications. It involves designing databases, writing server-side code, creating APIs, and testing and debugging the code."\n\n
+      <font size="20"><b> "Visit Down To Get Best Resources." </b></font>
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_android_development">AndroidDevelopmentActivity</string>
+    <string name="title_activity_second_sample">SecondSampleActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main3">MainActivity3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_weband_youtube">WebandYoutubeActivity</string>
+    <string name="title_activity_bottom_navbar">bottom_navbar</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_cssbottom_navigation">CSSBottomNavigationActivity</string>
+
+    <!--    ANDROID DEVELOPMENT - -->
+    <!--    To add roadmap in android application development-->
+    <string name="title_roadmap_app_development">\n\n"As an Android developer, there are various technologies and tools you need to be familiar with to build high-quality apps. Here\'s a general roadmap you can follow to become proficient in Android development:"\n\n\n\n
+    <b>"STEP 1 -: Learn Java or Kotlin"</b>\n\n
+    "Java is the primary programming language used for Android development. However, Kotlin is rapidly gaining popularity, so learning both would be an added advantage."
+
+    </string>
+
+    <!--    To add second step information-->
+    <string name="step_2_app_development"><b>\n\n"STEP 2 -:Understanding Android Studio"</b>\n\n
+    "Android Studio is the official Integrated Development Environment (IDE) for Android development. It provides a complete environment to create, test, and deploy Android applications. Therefore, you need to be familiar with the various features of Android Studio."\n
+
+    </string>
+
+    <!--    To add third step information-->
+    <string name="step_3_app_development"><b>\n\n"STEP 3 -:User Interface Design"</b>\n\n
+"As an Android developer, you must understand the basics of UI/UX design. You can start by learning XML and using Android\'s Layout Editor to build UI layouts."
+
+    </string>
+
+
+    <!--    To add fourth step information-->
+    <string name="step_4_app_development"><b>\n\n"STEP 4 -:Learn Android Components"</b>\n\n
+"Android development revolves around components. These include Activities, Fragments, Services, Broadcast Receivers, and Content Providers. Therefore, you must have a clear understanding of each component and their roles."
+
+    </string>
+
+    <!--    To add fifth step information-->
+    <string name="step_5_app_development"><b>\n\n"STEP 5 -:Database Management"</b>\n\n
+"Most Android applications require the use of databases to store and manage data. Therefore, you must learn how to use SQLite, the default database engine for Android."
+
+    </string>
+
+    <!--    To add sixth step information-->
+    <string name="step_6_app_development"><b>\n\n"STEP 6 -:Networking and APIs"</b>\n\n
+"Android applications often interact with web services via APIs. Therefore, you must have knowledge of networking and APIs to retrieve data from web servers. "
+
+    </string>
+
+    <!--    To add seventh step information-->
+    <string name="step_7_app_development"><b>\n\n"STEP 7 -:Security and Performance"</b>\n\n
+"As an Android developer, you must consider the security of your applications. You must also ensure that your application is optimized for performance."\n\n
+
+    </string>
+
+    <!--    To add eighth step information-->
+    <string name="step_8_app_development"><b>\n\n"STEP 8 -:Cross-Platform Development"</b>\n\n
+"Learning how to develop applications that can run on multiple platforms is an added advantage. You can use frameworks such as React Native or Flutter to develop cross-platform applications.\n\n\n"
+
+    </string>
+
+    <!--    To add nineth step information-->
+    <string name="step_9_app_development"><b>\n\n"STEP 9 -:Continuous Learning"</b>\n\n
+    "Android development is continually evolving. Therefore, you must be willing to keep learning new technologies and tools to stay updated."\n\n\n\n
+    <b>"CONCLUSION -:"</b>\n\n
+    "In conclusion, Android development is an exciting and rapidly evolving field that provides many opportunities for developers to create innovative and useful mobile applications. With the increasing popularity of smartphones and tablets, Android has become one of the most popular platforms for mobile app development."\n\n
+
+    </string>
+
+    <!--    Title SAMPLE STRING-->
+    <string name="title_activity_app_development"><b>"ANDROID DEVELOPMENT"</b></string>
+
+    <!--    WRITNG SAMPLE STRING-->
+    <string name="large_text_mobile"><b>ANDROID DEVELOPMENT</b></string>
+
+    <!--    Information about Java-->
+    <string name="java_information">"Java is one of the primary programming languages used in Android development. Android is an open-source mobile operating system developed by Google, and it is based on the Linux kernel. Java is used to develop the applications that run on the Android platform."
+    "Android provides a comprehensive set of libraries and tools for developers to create applications using Java. Some of the key libraries include the Android SDK, which provides the necessary tools and APIs to create Android applications, and the Android Studio IDE, which is used to develop, debug, and deploy Android applications."
+    "Java provides several advantages for Android development, including its object-oriented programming model, its platform independence, and its large community of developers and resources. Java also offers features such as garbage collection, multithreading, and memory management that are useful for developing complex Android applications."
+    "However, it is worth noting that Kotlin, another programming language developed by JetBrains, is becoming increasingly popular among Android developers due to its improved features and better interoperability with Java. Nonetheless, Java remains a crucial component of the Android development ecosystem, and it is still widely used by developers worldwide."
+    </string>
+
+    <string name="java_title_">" Java For Android App Development"</string>
+
+</resources>

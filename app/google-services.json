@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "309858264732",
+    "project_id": "l-clan",
+    "storage_bucket": "l-clan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309858264732:android:208eb444fa7ea3b56a6f59",
+        "android_client_info": {
+          "package_name": "com.example.l_clan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309858264732-p5vnj6tjb1pe1bdke3nvf8lklk3ll530.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKDplGqFZ5eB6M1Nnah35PpXXckL0Rkh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309858264732-p5vnj6tjb1pe1bdke3nvf8lklk3ll530.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

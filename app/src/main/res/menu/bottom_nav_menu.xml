@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_website"
+        android:icon="@drawable/websitevecto"
+        android:title="Websites" />
+    <item
+        android:id="@+id/navigation_youtube"
+        android:icon="@drawable/youtube"
+        android:title="Youtube" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_youtube1"-->
+<!--        android:icon="@drawable/youtube"-->
+<!--        android:title="Youtube" />-->
+
+</menu>

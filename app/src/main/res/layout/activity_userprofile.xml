@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".OtherActivities.userprofile">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/lclanlogo" />
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+
+        android:layout_gravity="center"
+        android:src="@drawable/userprofile" />
+
+    <TextView
+        android:id="@+id/showusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#008FE1"
+        android:onClick="startlearning"
+        android:padding="8dp"
+        android:text="start learning"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/forum"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WAY TO FORUM"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#6D8A9B"
+        android:onClick="logout"
+        android:text="logout"
+        android:textColor="@color/white" />
+</LinearLayout>

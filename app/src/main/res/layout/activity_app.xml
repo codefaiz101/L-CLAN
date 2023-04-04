@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:textAlignment="center"
+    tools:context=".Domains.AndroidDevelopment.AppActivity">
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/webdevelopmenttoolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="?attr/actionBarSize"-->
+    <!--        android:background="?attr/colorPrimary"-->
+    <!--        android:elevation="4dp"-->
+    <!--        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />-->
+
+    <ScrollView
+        android:id="@+id/tol1"
+        android:layout_width="match_parent"
+        android:layout_height="716dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:padding="1dp"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:scrollbarTrackVertical="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/AndTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/large_text_mobile"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarThumbVertical="@android:color/transparent"
+                android:scrollbarTrackVertical="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/AndRoadmap"
+                        android:layout_width="match_parent"
+                        android:layout_height="254dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/android_development_roadmap" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/Andstep1"
+                android:layout_width="match_parent"
+                android:layout_height="276dp"
+                android:justificationMode="inter_word"
+                android:text="@string/title_roadmap_app_development"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="190dp"
+                    android:padding="2dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/JavaImage"
+                                android:layout_width="146dp"
+                                android:layout_height="156dp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/java" />
+
+                            <TextView
+                                android:id="@+id/java"
+                                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#28b0ff"
+                                android:text="JAVA"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="190dp"
+                    android:padding="2dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/kotlin"
+                                android:layout_width="match_parent"
+                                android:layout_height="156dp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/kotlin" />
+
+                            <TextView
+                                android:id="@+id/kotlin1"
+                                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="#28b0ff"
+                                android:scaleType="fitXY"
+                                android:text="KOTLIN"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/step_2_app_development"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/android_studio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="171dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/android_studio" />
+
+                        <TextView
+                            android:id="@+id/android_studio1"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="#28b0ff"
+                            android:text="ANDROID STUDIO"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/step_3_app_development"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/xml"
+                            android:layout_width="wrap_content"
+                            android:layout_height="171dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/xml" />
+
+                        <TextView
+                            android:id="@+id/xml1"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="#28b0ff"
+                            android:text="XML"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/step_4_app_development"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/android_components"
+                            android:layout_width="wrap_content"
+                            android:layout_height="171dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/android_components" />
+
+                        <TextView
+                            android:id="@+id/android_components1"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="#28b0ff"
+                            android:text="ANDROID COMPONENTS"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/step_5_app_development"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/database"
+                            android:layout_width="wrap_content"
+                            android:layout_height="171dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/database" />
+
+                        <TextView
+                            android:id="@+id/database1"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="#28b0ff"
+                            android:text="DATABASE MANAGEMENT"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/step_6_app_development"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/API"
+                            android:layout_width="wrap_content"
+                            android:layout_height="171dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/api" />
+
+                        <TextView
+                            android:id="@+id/API1"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="#28b0ff"
+                            android:text="NETWORKING AND APIs"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/step_7_app_development"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/security"
+                            android:layout_width="wrap_content"
+                            android:layout_height="171dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/security" />
+
+                        <TextView
+                            android:id="@+id/security1"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="#28b0ff"
+                            android:text="SECURITY AND PERFORMANCE"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/step_8_app_development"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="190dp"
+                android:padding="2dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/react_native"
+                            android:layout_width="match_parent"
+                            android:layout_height="156dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/react_native" />
+
+                        <TextView
+                            android:id="@+id/react_native1"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#28b0ff"
+                            android:text="REACT NATIVE "
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="190dp"
+                android:padding="2dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/flutter"
+                            android:layout_width="match_parent"
+                            android:layout_height="156dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/flutter" />
+
+                        <TextView
+                            android:id="@+id/flutter1"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#28b0ff"
+                            android:text="FLUTTER "
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/step_9_app_development"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

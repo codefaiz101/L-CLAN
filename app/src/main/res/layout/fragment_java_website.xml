@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Domains.WebDevelopment.Backend.BackendFragment.ProgramminLangugesFragmentpart.JavaFragment.JavaFragmentWebsite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/JavaWebResource1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 1(Recommended)"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/JavawebResourceimage1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/wthreeschool" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/JavaWebResource2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 2"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/JavawebResourceimage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/gfgimage" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/JavaWebResource3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 2"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/JavawebResourceimage3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:layout_marginStart="65dp"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/javatpont" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/JavaWebResource4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 3"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/JavawebResourceimage4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/codecadem" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/JavaWebResource5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 4"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/JavawebResourceimage5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/freecodecamp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

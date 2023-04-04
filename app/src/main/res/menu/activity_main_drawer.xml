@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_menu"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="home" />
+
+        <item
+            android:id="@+id/settings_menu"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="settings" />
+
+        <item
+            android:id="@+id/userprofile_menu"
+            android:icon="@drawable/userprofile"
+            android:title="user-profile" />
+    </group>
+
+    <item android:title="About subject">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/history_menu"
+                    android:icon="@drawable/ic_baseline_history_24"
+                    android:title="history" />
+                <item
+                    android:id="@+id/info_menu"
+                    android:icon="@drawable/ic_baseline_info_24"
+                    android:title="info" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="where to learn">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/websites_menu"
+                    android:icon="@drawable/web_icon"
+                    android:title="websites" />
+                <item
+                    android:id="@+id/youtube_menu"
+                    android:icon="@drawable/youtubelogo"
+                    android:title="Youtube" />
+                <item
+                    android:id="@+id/documentation_menu"
+                    android:icon="@drawable/documenticon"
+                    android:title="documentation" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
