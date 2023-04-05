@@ -27,7 +27,7 @@
         android:layout_margin="10dp"
         android:fontFamily="@font/marmelad"
         android:padding="-20dp"
-        android:text="Welcome to L-clan"
+        android:text="Welcome to L-Clan"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="34sp"

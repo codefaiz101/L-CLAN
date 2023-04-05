@@ -36,7 +36,7 @@ public class BackendJavaBottomNavigationActivity extends AppCompatActivity {
     }
     private void replaceFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.JavaframeLayout, fragment)
+                .replace(R.id.JavabottomNavigationView, fragment)
                 .commit();
     }
 }

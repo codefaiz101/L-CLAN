@@ -138,8 +138,8 @@ take input phone no
                         if (task.isSuccessful()){
                             Toast.makeText(phnnovrf.this, "verification successful", Toast.LENGTH_SHORT).show();
                             //experiment
-                            Button myButton=(Button) signup_page.myActivity.findViewById(R.id.go2);
-                            myButton.setEnabled(true);
+                            Button hcl = signup_page.myActivity.findViewById(R.id.go2);
+                            hcl.setEnabled(true);
 //                            findViewById(R.id.go2).setEnabled(true); //not worked
                             //tp
 //                            Intent intent = new Intent(getApplicationContext(),userprofile.class);

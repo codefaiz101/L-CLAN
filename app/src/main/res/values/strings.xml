@@ -59,7 +59,7 @@ There are many career paths in web development, including front-end developer, b
 
     <string name="frontend_string">
 
-       <font size="25"> <b>FRONTEND DEVELOPMENT</b></font>\n\n
+       <font size="20"> <b>FRONTEND DEVELOPMENT</b></font>\n\n
 "Frontend development is the practice of creating the user-facing portion of a website or application. This includes designing the layout, interface, and interactions that users have with the site or app. Frontend developers use programming languages like HTML, CSS, and JavaScript to create web pages that are rendered in a user's browser.\n\n"
 
 "HTML (Hypertext Markup Language) is the backbone of a website and provides the structure and content for web pages. CSS (Cascading Style Sheets) is used to define the presentation of HTML elements, including layout, colors, fonts, and animations. JavaScript is a programming language used to create interactive and dynamic elements on a web page, such as dropdown menus, popups, and animations.\n\n"

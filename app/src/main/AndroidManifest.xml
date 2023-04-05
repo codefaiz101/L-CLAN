@@ -14,8 +14,8 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31" >
         <activity
-            android:name=".BackendJavaBottomNavigationActivity"
-            android:exported="false" />
+            android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendJavaBottomNavigationActivity"
+            android:exported="false" /><!-- changed -->
         <!-- <activity -->
         <!-- android:name=".Domains.AndroidDevelopment.AppActivity" -->
         <!-- android:exported="false"> -->
@@ -170,6 +170,10 @@
             android:exported="true"
             android:label="@string/title_activity_android_development"
             android:theme="@style/Theme.LCLAN.NoActionBar" />
+        <activity
+            android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendJavaBottomNavigationActivity"
+            android:exported="true" />
+
         <activity
             android:name=".Domains.DomainsPartActivity"
             android:exported="true" >
