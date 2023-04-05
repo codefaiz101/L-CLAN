@@ -1,14 +1,12 @@
 package com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.os.Bundle;
-
 import com.example.l_clan.Domains.WebDevelopment.Backend.BackendFragment.ProgramminLangugesFragmentpart.JavaFragment.JavaFragmentWebsite;
 import com.example.l_clan.Domains.WebDevelopment.Backend.BackendFragment.ProgramminLangugesFragmentpart.JavaFragment.JavaFragmentYoutube;
-import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.HtmlFragemet.HTMLWebsite;
-import com.example.l_clan.Domains.WebDevelopment.Frontend.Fragment.HtmlFragemet.HTMLYoutube;
 import com.example.l_clan.R;
 import com.example.l_clan.databinding.ActivityBackendJavaBottomNavigationBinding;
 

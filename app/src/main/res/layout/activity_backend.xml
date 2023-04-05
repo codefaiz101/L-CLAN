@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="1] PROGRAMMING LANGUAGES"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:textStyle="bold"
                 />
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="2] FRAMEWORKS"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:textStyle="bold"
                 />
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:text="3] DATABASES"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:textStyle="bold"
                 />
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:text="4] APIs"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:textStyle="bold"
                 />
@@ -151,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:text="5] WEB SERVERS"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:textStyle="bold"
                 />
@@ -170,7 +170,7 @@
                 android:layout_height="wrap_content"
                 android:text="6] VERSION CONTROL SYSTEM"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:textStyle="bold"
                 />
@@ -219,7 +219,7 @@
                 android:layout_height="wrap_content"
                 android:text="7] TESTING TOOLS"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:textStyle="bold"
                 />
@@ -238,7 +238,7 @@
                 android:layout_height="wrap_content"
                 android:text="8] DEPLOYMENT TOOLS"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:textStyle="bold"
                 />
