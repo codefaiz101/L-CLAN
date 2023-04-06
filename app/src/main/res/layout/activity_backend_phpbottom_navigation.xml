@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendJavaBottomNavigationActivity">
+    tools:context=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendDjangoBottomNavigationActivity">
 
     <FrameLayout
-        android:id="@+id/BackendJavaLayout"
+        android:id="@+id/PHPframeLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/BackendJavaNavigationView"
+        app:layout_constraintBottom_toTopOf="@+id/PHPbottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +20,7 @@
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BackendJavaNavigationView"
+        android:id="@+id/PHPbottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

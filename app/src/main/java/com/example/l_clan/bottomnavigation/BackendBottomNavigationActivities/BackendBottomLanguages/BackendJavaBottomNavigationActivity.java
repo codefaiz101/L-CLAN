@@ -18,7 +18,7 @@ public class BackendJavaBottomNavigationActivity extends AppCompatActivity {
         binding = ActivityBackendJavaBottomNavigationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new JavaFragmentWebsite());
-        binding.JavabottomNavigationView.setOnItemSelectedListener(item -> {
+        binding.BackendJavaNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.navigation_website:
                     replaceFragment(new JavaFragmentWebsite());
@@ -34,7 +34,7 @@ public class BackendJavaBottomNavigationActivity extends AppCompatActivity {
     }
     private void replaceFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.JavabottomNavigationView, fragment)
+                .replace(R.id.BackendJavaLayout, fragment)
                 .commit();
     }
 }

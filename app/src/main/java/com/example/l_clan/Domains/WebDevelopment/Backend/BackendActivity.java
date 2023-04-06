@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 
 import com.example.l_clan.Adapter.BackendAdapters.DBMSAdapter;
 import com.example.l_clan.Adapter.BackendAdapters.DeploymentAdapter;
@@ -23,7 +22,12 @@ import com.example.l_clan.Models.BackendModels.ProgramminglanguageModels;
 import com.example.l_clan.Models.BackendModels.ServerModels;
 import com.example.l_clan.Models.BackendModels.TTModels;
 import com.example.l_clan.R;
-import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendJavaBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendDjangoBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendJavaBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendNodeJsBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendPHPBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendPythonBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.BottomNavigationActivity;
 
 import java.util.ArrayList;
 
@@ -63,24 +67,24 @@ public class BackendActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intent1 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        Intent intent1 = new Intent(getApplicationContext(), BackendNodeJsBottomNavigationActivity.class);
                         startActivity(intent1);
                         break;
                     case 2:
-                        Intent intent2 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        Intent intent2 = new Intent(getApplicationContext(), BackendPHPBottomNavigationActivity.class);
                         startActivity(intent2);
                         break;
                     case 3:
-                        Intent intent3 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        Intent intent3 = new Intent(getApplicationContext(), BackendDjangoBottomNavigationActivity.class);
                         startActivity(intent3);
                         break;
                     case 4:
-                        Intent intent4 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
+                        Intent intent4 = new Intent(getApplicationContext(), BackendPythonBottomNavigationActivity.class);
                         startActivity(intent4);
                         break;
                     default:
-                        Intent intent5 = new Intent(getApplicationContext(), BackendJavaBottomNavigationActivity.class);
-                        startActivity(intent5);
+                        Intent intent6 = new Intent(getApplicationContext(), BottomNavigationActivity.class);
+                        startActivity(intent6);
 
                 }
             }

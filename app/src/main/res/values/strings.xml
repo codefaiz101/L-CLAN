@@ -187,5 +187,14 @@ There are many career paths in web development, including front-end developer, b
     </string>
 
     <string name="java_title_">" Java For Android App Development"</string>
+    <string name="rank_1_recommended"># Rank 1(Recommended)</string>
+    <string name="rank_2"># Rank 2</string>
+    <string name="rank_5"># Rank 5</string>
+    <string name="rank_4"># Rank 4</string>
+    <string name="rank_3"># Rank 3</string>
+    <string name="rank_1_codewithharry"># Rank 1 (CodeWithHarry)</string>
+    <string name="rank_2_apna_college"># Rank 2 (Apna College)</string>
+    <string name="rank_3_anuj_bhaia"># Rank 3 (Anuj Bhaia)</string>
+    <string name="rank_4_tech_gun"># Rank 4 (Tech Gun)</string>
 
 </resources>

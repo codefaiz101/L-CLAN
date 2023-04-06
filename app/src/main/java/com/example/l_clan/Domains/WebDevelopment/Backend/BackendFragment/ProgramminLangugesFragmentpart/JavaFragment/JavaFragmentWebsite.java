@@ -28,36 +28,44 @@ public class JavaFragmentWebsite extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_java_website, container, false);
-        ImageView imageView = view.findViewById(R.id.JavawebResourceimage1);
-        ImageView imageView1 = view.findViewById(R.id.JavawebResourceimage2);
-        ImageView imageView2 = view.findViewById(R.id.JavawebResourceimage3);
-        ImageView imageView3 = view.findViewById(R.id.JavawebResourceimage4);
-
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                gotoUrl("");
-            }
-        });
+        ImageView imageView1 = view.findViewById(R.id.BackendJavaResourceimage1);
+        ImageView imageView2 = view.findViewById(R.id.BackendJavaResourceimage2);
+        ImageView imageView3 = view.findViewById(R.id.BackendJavaResourceimage3);
+        ImageView imageView4 = view.findViewById(R.id.BackendJavaResourceimage4);
+        ImageView imageView5 = view.findViewById(R.id.BackendJavaResourceimage5);
 
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("");
+                gotoUrl("https://www.w3schools.com/java/default.asp");
             }
         });
+
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("");
+                gotoUrl("https://www.geeksforgeeks.org/java/");
             }
         });
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("");
+                gotoUrl("https://www.javatpoint.com/java-tutorial");
             }
         });
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.codecademy.com/learn/learn-java");
+            }
+        });
+        imageView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.freecodecamp.org/news/learn-java-free-java-courses-for-beginners/");
+            }
+        });
+
 
 
         return view;
