@@ -11,6 +11,10 @@ public class UserHelperClass {
         this.password2 = password2;
     }
 
+    public UserHelperClass(){
+
+    }
+
     public String getFullname2() {
         return fullname2;
     }

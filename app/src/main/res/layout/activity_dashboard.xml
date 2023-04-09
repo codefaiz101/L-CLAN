@@ -8,7 +8,7 @@
     android:onClick="loginuser"
     android:orientation="vertical"
     android:textAlignment="center"
-    tools:context=".OtherActivities.Dashboard">
+    tools:context=".OtherActivities.loginpage">
 
     <ImageView
         android:id="@+id/logo_image1"

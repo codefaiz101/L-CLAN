@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".OtherActivities.phnnovrf">
+    tools:context=".OtherActivities.phoneverification_Registration">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="wrap_content"
@@ -22,51 +22,40 @@
             android:textColor="@color/black"
             android:textSize="30sp" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
+        android:id="@+id/textviewshowphoneno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/verifyotp"
-            android:layout_width="280dp"
-
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <Button
-        android:id="@+id/sendvrfcode"
+        android:text="Verification code send to "
+        android:layout_margin="10dp"/>
+    <com.chaos.view.PinView
+        android:id="@+id/pinview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#28b0ff"
-        android:text="sendcode"
-        android:textColor="@color/white" />
+        android:layout_marginTop="50dp"
+        app:itemCount="6"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:itemRadius="10dp"
+        android:textSize="12sp"
+        style="@style/PinWidget.PinView"
+        android:itemBackground="@color/lightgrey"
+        >
+    </com.chaos.view.PinView>
     <Button
         android:id="@+id/verifyotpbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
         android:backgroundTint="#28b0ff"
         android:text="verify"
+        android:layout_margin="60dp"
         android:textColor="@color/white" />
-    <Button
-        android:id="@+id/successfull"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#28b0ff"
-        android:text="next"
-        android:textColor="@color/white" />
-
     <ProgressBar
         android:id="@+id/progressbarverifyno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp" />
+        android:layout_gravity="center" />
 </LinearLayout>

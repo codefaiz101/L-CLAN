@@ -23,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-public class Dashboard extends AppCompatActivity {
+public class loginpage extends AppCompatActivity {
     Button gotosignup;
     Button go;
     ImageView logo_image;
@@ -50,7 +50,7 @@ public class Dashboard extends AppCompatActivity {
         gotosignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, signup_page.class);
+                Intent intent = new Intent(loginpage.this, signup_page.class);
                 Pair[] pairs = new Pair[6];
                 pairs[0] = new Pair<View,String>(logo_image,"logo_image");
                 pairs[1] = new Pair<View,String>(logo_name,"logo_name");
@@ -58,11 +58,14 @@ public class Dashboard extends AppCompatActivity {
                 pairs[3] = new Pair<View,String>(username1,"username");
                 pairs[4] = new Pair<View,String>(password1,"password");
                 pairs[5] = new Pair<View,String>(go,"go");
-                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Dashboard.this,pairs);
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(loginpage.this,pairs);
                 startActivity(intent,options.toBundle());
             }
         });
 
+    }
+    public void onBackPressed() {
+        //do nothing
     }
     private boolean validateusername2(){
         String val = username1.getEditText().getText().toString();
@@ -123,7 +126,7 @@ public class Dashboard extends AppCompatActivity {
                             String phonenofromDB = snapshot.child(usernamebyuser).child("phoneno2").getValue(String.class);
                             String usernamefromDB = snapshot.child(usernamebyuser).child("username2").getValue(String.class);
 
-                            Intent intent = new Intent(Dashboard.this, userprofile.class);
+                            Intent intent = new Intent(loginpage.this, userprofile.class);
 
                             intent.putExtra("fullname2", fullnamefromDB);
                             intent.putExtra("username2", usernamefromDB);

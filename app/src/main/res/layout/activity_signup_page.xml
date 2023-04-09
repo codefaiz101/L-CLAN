@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:fontFamily="@font/bungee"
+        android:fontFamily="@font/marmelad"
         android:text="Welcome to L-clan"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -47,12 +47,14 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:textColorHint="#000000"
+            app:hintTextColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
             app:boxStrokeColor="#000000"
             android:id="@+id/fullname2"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="enter your full name">
+            android:hint="Firstname+Surname">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:textColor="@color/black"
@@ -63,12 +65,14 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:textColorHint="#000000"
+            app:hintTextColor="@color/black"
             app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
             android:id="@+id/username2"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="username"
+            android:hint="UserName"
             android:transitionName="username"
             app:counterMaxLength="15">
 
@@ -81,14 +85,16 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:textColorHint="#000000"
+            app:hintTextColor="@color/black"
             app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
             android:id="@+id/email2"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
-            android:hint="enter your email">
+            android:hint="Email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:textColor="@color/black"
@@ -99,25 +105,32 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:textColorHint="#000000"
+            app:hintTextColor="@color/black"
             app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
             android:id="@+id/phoneno2"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
-            android:hint="enter your phone-no">
+            android:hint="Phone-No">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number" />
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:textColorHint="#000000"
+            app:hintTextColor="@color/black"
             app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
             android:id="@+id/password2"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
@@ -138,23 +151,30 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
     <Button
         android:textColor="@color/white"
-        android:id="@+id/vrfphn"
-        android:layout_width="match_parent"
+        android:id="@+id/btnveridyphn"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#28b0ff"
-        android:onClick="verifyphone"
+        android:onClick="Verify"
         android:text="Verify phone" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/go2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#28b0ff"
-        android:onClick="registeruser"
-        android:text="go"
-        android:transitionName="go" />
+<!--    <Button-->
+<!--        android:layout_gravity="center"-->
+<!--        android:id="@+id/go2"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="#28b0ff"-->
+<!--        android:onClick="registeruser"-->
+<!--        android:text="go"-->
+<!--        android:transitionName="go" />-->
 
     <Button
         android:id="@+id/gotologin2"

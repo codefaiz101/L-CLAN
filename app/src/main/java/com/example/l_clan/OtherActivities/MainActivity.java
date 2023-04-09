@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private static int SPLASH_SCREEN = 2000;
 
     Animation topanim,bottomanim;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(MainActivity.this, Dashboard.class);
+                    Intent intent = new Intent(MainActivity.this, loginpage.class);
 
                     Pair[] pairs = new Pair[2];
                     pairs[0] = new Pair<View, String>(logo_image, "logo_image");

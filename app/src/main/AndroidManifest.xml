@@ -204,6 +204,9 @@
             android:name=".Domains.WebDevelopment.WebActivity"
             android:exported="false" />
         <activity
+            android:name=".forum.forum_1"
+            android:exported="false" />
+        <activity
             android:name=".Domains.AndroidDevelopment.AppActivity"
             android:exported="true"
             android:label="@string/title_activity_android_development"
@@ -234,7 +237,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".OtherActivities.phnnovrf"
+            android:name=".OtherActivities.phoneverification_Registration"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -264,7 +267,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".OtherActivities.Dashboard"
+            android:name=".OtherActivities.loginpage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

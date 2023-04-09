@@ -11,16 +11,13 @@ import android.widget.Toast;
 
 import com.example.l_clan.R;
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import android.app.Activity;
 
 public class signup_page extends AppCompatActivity {
-    Button gotologin,go2, vrfphn ;
+
+    Button gotologin,go2, btnveridyphn ;
     TextInputLayout fullname2,username2,email2,password2,phoneno2;
-    FirebaseDatabase rootnode;
-    DatabaseReference reference;
 
     public static Activity myActivity;
 
@@ -30,22 +27,37 @@ public class signup_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_page);
         gotologin = findViewById(R.id.gotologin2);
-        go2 = findViewById(R.id.go2);
-        go2.setEnabled(false);
         fullname2 = findViewById(R.id.fullname2);
         username2 = findViewById(R.id.username2);
         email2 = findViewById(R.id.email2);
         phoneno2 = findViewById(R.id.phoneno2);
         password2 = findViewById(R.id.password2);
-//        vrfphn = findViewById(R.id.vrfphn);
+        btnveridyphn = findViewById(R.id.btnveridyphn);
         gotologin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(signup_page.this, Dashboard.class);
+                Intent intent = new Intent(signup_page.this, loginpage.class);
                 startActivity(intent);
             }
         });
     }
+//    public void verificatondone(){
+//        //set field null again
+//        fullname2.getEditText().setText(null);
+//        username2.getEditText().setText(null);
+//        email2.getEditText().setText(null);
+//        phoneno2.getEditText().setText(null);
+//        password2.getEditText().setText(null);
+//
+//        password2.clearFocus(); //to remove focus from password
+//
+//        //set "already have an account" text to login
+//        gotologin.setText("login");
+//
+//        //show toast of success
+//        Toast.makeText(myActivity, "User Registered Successfully", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "now you can login", Toast.LENGTH_SHORT).show();
+//    }
     private boolean validatefullname2(){
         String val = fullname2.getEditText().getText().toString();
 
@@ -147,24 +159,10 @@ public class signup_page extends AppCompatActivity {
         }
     }
 
-    public void verifyphone(View view){
-        //if not validated  then return
+    public void Verify(View view){
+        //        if not validated  then return
         if (!validatefullname2() | !validateusername2() | !validatemail2() | !validatephoneno2() | !validatenamepassword2() ){
-            return;
-        }
-        //goto phone verify
-        String phoneno = phoneno2.getEditText().getText().toString();
-        Intent intent = new Intent(signup_page.this, phnnovrf.class);
-        intent.putExtra("phoneno",phoneno);
-        startActivity(intent);
-    }
-    public void doneverify(View view){
-        go2.setEnabled(true);
-        Toast.makeText(this, "You can now register", Toast.LENGTH_SHORT).show();
-    }
-    public void registeruser(View view){
-        //if not validated  then return
-        if (!validatefullname2() | !validateusername2() | !validatemail2() | !validatephoneno2() | !validatenamepassword2() ){
+            Toast.makeText(this, "information entered is not proper", Toast.LENGTH_SHORT).show();
             return;
         }
         //initialize all
@@ -174,26 +172,28 @@ public class signup_page extends AppCompatActivity {
         String phoneno = phoneno2.getEditText().getText().toString();
         String password = password2.getEditText().getText().toString();
 
-        //just declared rootnode
-        rootnode = FirebaseDatabase.getInstance();
-        reference = rootnode.getReference("users");
-
-        //add to database
-        UserHelperClass helperClass = new UserHelperClass(fullname,username,email,phoneno,password);
-        reference.child(username).setValue(helperClass);
-
-        //set feild null again
-        fullname2.getEditText().setText(null);
-        username2.getEditText().setText(null);
-        email2.getEditText().setText(null);
-        phoneno2.getEditText().setText(null);
-        password2.getEditText().setText(null);
-        //set "already have an account" text to login
-        gotologin.setText("login");
-
-        //show toast of success
-        Toast.makeText(this, "successfully registered", Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "now you can login", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(signup_page.this, phoneverification_Registration.class);
+        intent.putExtra("fullname",fullname);
+        intent.putExtra("username",username);
+        intent.putExtra("email",email);
+        intent.putExtra("phoneno",phoneno);
+        intent.putExtra("password",password);
+        startActivity(intent);
 
     }
+//    public void registeruser(View view){
+//        //just declared database
+//        thedatabase = FirebaseDatabase.getInstance();
+//        reference = thedatabase.getReference("users");
+//
+//        //initialize all
+//        String fullname = fullname2.getEditText().getText().toString();
+//        String username = username2.getEditText().getText().toString();
+//        String email = email2.getEditText().getText().toString();
+//        String phoneno = phoneno2.getEditText().getText().toString();
+//        String password = password2.getEditText().getText().toString();
+//
+//        helperClass = new UserHelperClass(fullname,username,email,phoneno,password);
+//        reference.child(username).setValue(helperClass);
+//    }
 }
