@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Domains.WebDevelopment.WebActivity"
     android:layout_height="match_parent"
+    android:background="@drawable/userprofilebgimg"
     android:orientation="horizontal">
 
 <!--    <androidx.appcompat.widget.Toolbar-->
