@@ -15,7 +15,7 @@
         android:background="#008FE1"
         android:id="@+id/messageInputLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:padding="16dp">
@@ -29,10 +29,12 @@
             android:inputType="text"/>
 
         <Button
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_baseline_send_24"
             android:id="@+id/sendButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Send"/>
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
 
     </LinearLayout>
 

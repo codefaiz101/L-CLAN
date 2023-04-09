@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l_clan.R;
-import com.example.l_clan.databinding.ActivityForum1Binding;
+//import com.example.l_clan.databinding.ActivityForum1Binding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
@@ -34,7 +34,7 @@ import java.util.Map;
 
 public class forum_1 extends AppCompatActivity {
 
-   ActivityForum1Binding binding ;  //to replace find view by id
+//   ActivityForum1Binding binding ;  //to replace find view by id
 
     private RecyclerView recyclerView;
     private MessageAdapter adapter;
@@ -48,8 +48,8 @@ public class forum_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityForum1Binding.inflate(getLayoutInflater());     //to replace find view by id
-        setContentView(binding.getRoot());        //to replace find view by id
+//        binding = ActivityForum1Binding.inflate(getLayoutInflater());     //to replace find view by id
+        setContentView(R.layout.activity_forum_1);        //to replace find view by id
 
         recyclerView = findViewById(R.id.recyclerView);
         messageEditText = findViewById(R.id.messageEditText);
