@@ -25,7 +25,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -50,7 +50,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/wthreeschool" />
+                            app:srcCompat="@drawable/gfgimage" />
 
                         <ImageView
                             android:id="@+id/imageView4"
@@ -72,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -94,10 +94,10 @@
 
                         <ImageView
                             android:id="@+id/BackendRubyResourceimage2"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="160dp"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/gfgimage" />
+                            app:srcCompat="@drawable/javatpont" />
 
 
                     </LinearLayout>
@@ -113,7 +113,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -137,7 +137,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="160dp"
                             android:scaleType="fitXY"
-                            app:srcCompat="@drawable/javatpont" />
+                            app:srcCompat="@drawable/tutorialspoint" />
 
 
                     </LinearLayout>
@@ -153,7 +153,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -193,7 +193,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -217,8 +217,8 @@
                             android:id="@+id/BackendRubyResourceimage5"
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
-                            android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/tutorialspoint" />
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ruby" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>

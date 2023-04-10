@@ -27,7 +27,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -68,7 +68,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -109,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -120,7 +120,7 @@
                             android:id="@+id/JavaYtResource3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="# Rank 3 (Anuj Bhaia)"
+                            android:text="# Rank 3 (Anuj Bhaiya)"
                             android:layout_marginTop="2dp"
                             android:background="#28b0ff"
                             android:textColor="@color/white"
@@ -149,7 +149,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -161,7 +161,7 @@
                             android:id="@+id/JavaYtResource4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="# Rank 4 (Tech Gun)"
+                            android:text="# Rank 4 (Neso Academy)"
                             android:layout_marginTop="2dp"
                             android:background="#28b0ff"
                             android:textColor="@color/white"

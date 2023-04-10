@@ -12,15 +12,15 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbarThumbVertical="@android:color/transparent"
-        android:scrollbarTrackVertical="@android:color/transparent"
         android:layout_marginTop="10dp"
-        android:padding="7dp">
+        android:padding="7dp"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:scrollbarTrackVertical="@android:color/transparent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/frontedtextview"
@@ -31,83 +31,85 @@
                 android:justificationMode="inter_word"
                 android:text="@string/backend_string"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/JavaText"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BACKEND TECHNOLOGY"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="4dp"
                 android:background="#28b0ff"
+                android:text="BACKEND TECHNOLOGY"
                 android:textColor="#ffffff"
-                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/PGL"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1] PROGRAMMING LANGUAGES"
                 android:layout_marginTop="5dp"
+                android:text="1] PROGRAMMING LANGUAGES"
                 android:textColor="@color/white"
-                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/ProgrammingRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="12dp"
-                android:scrollbars="horizontal"
                 android:scaleType="centerInside"
+                android:scrollbars="horizontal"
                 tools:listitem="@layout/backendsinglerv" />
 
             <TextView
                 android:id="@+id/FRM"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2] FRAMEWORKS"
                 android:layout_marginTop="5dp"
+                android:text="2] FRAMEWORKS"
                 android:textColor="@color/white"
-                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/FrameworkRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="12dp"
-                android:scrollbars="horizontal"
                 android:scaleType="centerInside"
+                android:scrollbars="horizontal"
                 tools:listitem="@layout/fremworkstylesingle" />
+
             <TextView
                 android:id="@+id/DBMS"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3] DATABASES"
                 android:layout_marginTop="5dp"
+                android:text="3] DATABASES"
                 android:textColor="@color/white"
-                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/DBMSRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="12dp"
-                android:scrollbars="horizontal"
                 android:scaleType="centerInside"
+                android:scrollbars="horizontal"
                 tools:listitem="@layout/dbmssinglerecyclerview" />
 
             <TextView
                 android:id="@+id/API"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4] APIs"
                 android:layout_marginTop="5dp"
+                android:text="4] APIs"
                 android:textColor="@color/white"
-                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="195dp">
@@ -116,8 +118,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
-                    app:cardElevation="5dp">
+                    android:clickable="true"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp"
+                    android:focusable="true">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -133,48 +137,48 @@
 
                         <TextView
                             android:id="@+id/APIText"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="APIs"
                             android:layout_marginTop="2dp"
                             android:background="#28b0ff"
+                            android:text="APIs"
                             android:textColor="#ffffff"
-                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                            android:textStyle="bold"
-                            />
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
+
             <TextView
                 android:id="@+id/SER"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5] WEB SERVERS"
                 android:layout_marginTop="5dp"
+                android:text="5] WEB SERVERS"
                 android:textColor="@color/white"
-                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/ServerRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="12dp"
-                android:scrollbars="horizontal"
                 android:scaleType="centerInside"
+                android:scrollbars="horizontal"
                 tools:listitem="@layout/serversinglerecyclerlayout" />
 
             <TextView
                 android:id="@+id/VC"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6] VERSION CONTROL SYSTEM"
                 android:layout_marginTop="5dp"
+                android:text="6] VERSION CONTROL SYSTEM"
                 android:textColor="@color/white"
-                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="195dp">
@@ -200,15 +204,14 @@
 
                         <TextView
                             android:id="@+id/VCText"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="APIs"
                             android:layout_marginTop="2dp"
                             android:background="#28b0ff"
+                            android:text="APIs"
                             android:textColor="#ffffff"
-                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                            android:textStyle="bold"
-                            />
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -216,40 +219,40 @@
 
             <TextView
                 android:id="@+id/TT"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="7] TESTING TOOLS"
                 android:layout_marginTop="5dp"
+                android:text="7] TESTING TOOLS"
                 android:textColor="@color/white"
-                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/TTRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="12dp"
-                android:scrollbars="horizontal"
                 android:scaleType="centerInside"
+                android:scrollbars="horizontal"
                 tools:listitem="@layout/ttsinglerecyclerlayout" />
 
             <TextView
                 android:id="@+id/DT"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8] DEPLOYMENT TOOLS"
                 android:layout_marginTop="5dp"
+                android:text="8] DEPLOYMENT TOOLS"
                 android:textColor="@color/white"
-                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/DTRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="12dp"
-                android:scrollbars="horizontal"
                 android:scaleType="centerInside"
+                android:scrollbars="horizontal"
                 tools:listitem="@layout/deploymentsinglelayout" />
 
         </LinearLayout>

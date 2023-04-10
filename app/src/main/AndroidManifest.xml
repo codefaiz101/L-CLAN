@@ -13,47 +13,130 @@
         android:theme="@style/Theme.LCLAN"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <!-- backendBottomNavigationActivity BackendDevelopmentToolsFragmentpart -->
+        <activity
+            android:name=".bottomnavigation.BackendDevelopmentToolsFragmentpart.BackendDevelopmentToolsJenkinsBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.BackendDevelopmentToolsFragmentpart.BackendDevelopmentToolsDockerBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.BackendDevelopmentToolsFragmentpart.BackendDevelopmentToolsKubernatesBottomNavigationActivity"
+            android:exported="false" /> <!-- backendBottomNavigationActivity BackendTestingToolsFragmentpart -->
+        <activity
+            android:name=".bottomnavigation.BackendTestingToolsFragmentpart.BackendTestingToolsSeleniumBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.BackendTestingToolsFragmentpart.BackendTestingToolsMochaBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.BackendTestingToolsFragmentpart.BackendTestingToolsJestBottomNavigationActivity"
+            android:exported="false" /> <!-- backendBottomNavigationActivity BackendVersionControlSystemFragmentpart -->
+        <activity
+            android:name=".bottomnavigation.BackendVersionControlSystemFragmentpart.BackendVersionControlSystemApisBottomNavigationActivity"
+            android:exported="false" /> <!-- backendBottomNavigationActivity BackendWebServerFragmentPart -->
+        <activity
+            android:name=".bottomnavigation.BackendWebServerFragmentPart.BackendWebServerOracleBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.BackendWebServerFragmentPart.BackendWebServerNignxBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.BackendWebServerFragmentPart.BackendWebServerApacheBottomNavigationActivity"
+            android:exported="false" /> <!-- backendBottomNavigationActivity BackendApiFragment -->
+        <activity
+            android:name=".bottomnavigation.BackendApiFragment.BackendApiBottomNavigationActivity"
+            android:exported="false" /> <!-- backendBottomNavigationActivity BackendDatabaseFragmentpart -->
+        <activity
+            android:name=".bottomnavigation.BackendDatabaseFragmentpart.BackendDatabaseOracleBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.BackendDatabaseFragmentpart.BackendDatabasePostgreSqlBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.BackendDatabaseFragmentpart.BackendDatabaseMySqlBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.BackendDatabaseFragmentpart.BackendDatabaseMongoDbBottomNavigationActivity"
+            android:exported="false" /> <!-- backendBottomNavigationActivity_FrameWorks -->
+        <activity
+            android:name=".bottomnavigation.BackendFrameworksFragmentpart.BackendFrameworkDjangoBottomNavigationActivity"
+            android:exported="false" />
 
-        <!--        backendBottomNavigationActivity                  -->
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name=".bottomnavigation.BackendFrameworksFragmentpart.BackendFrameworkSpringBottomNavigationActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name=".bottomnavigation.BackendFrameworksFragmentpart.BackendFrameworkRubyOnRailsBottomNavigationActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name=".bottomnavigation.BackendFrameworksFragmentpart.BackendFrameworkLaravelBottomNavigationActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name=".bottomnavigation.BackendFrameworksFragmentpart.BackendFrameworkExpressJsBottomNavigationActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" /> <!-- backendBottomNavigationActivity_Programming_Languages -->
         <activity
             android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendJavaBottomNavigationActivity"
             android:exported="false" />
+
         <meta-data
             android:name="android.app.lib_name"
             android:value="" />
+
         <activity
             android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendNodeJsBottomNavigationActivity"
             android:exported="false" />
+
         <meta-data
             android:name="android.app.lib_name"
             android:value="" />
+
         <activity
             android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendPHPBottomNavigationActivity"
             android:exported="false" />
+
         <meta-data
             android:name="android.app.lib_name"
             android:value="" />
+
         <activity
             android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendPythonBottomNavigationActivity"
             android:exported="false" />
+
         <meta-data
             android:name="android.app.lib_name"
             android:value="" />
-        <activity
-            android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendDjangoBottomNavigationActivity"
-            android:exported="false" />
-        <meta-data
-            android:name="android.app.lib_name"
-            android:value="" />
+
         <activity
             android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendRubyBottomNavigationActivity"
             android:exported="false" />
+
         <meta-data
             android:name="android.app.lib_name"
-            android:value="" />
-
-
-        <!-- changed -->
+            android:value="" /> <!-- changed -->
         <!-- <activity -->
         <!-- android:name=".Domains.AndroidDevelopment.AppActivity" -->
         <!-- android:exported="false"> -->

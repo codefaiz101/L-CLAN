@@ -3,12 +3,188 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Domains.WebDevelopment.Backend.BackendFragment.ApiFragmentpart.ApiFragment.APIFragmentYoutube">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    tools:context=".Domains.WebDevelopment.Backend.ApiFragment.APIFragmentYoutube">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ApisYtResource1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 1 (Traversy Media)"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ApisYtResourceimage1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/youtube12" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/youtube12" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ApisYtResource2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 2 (freeCodeCamp.org)"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ApisYtResourceimage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/youtube12" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/ApisYtResource3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 3 (WsCube Tech)"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ApisYtResourceimage3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/youtube12" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ApisYtResource4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 4 (Geeky Shows)"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ApisYtResourceimage4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/youtube12" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

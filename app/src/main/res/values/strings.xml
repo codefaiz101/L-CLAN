@@ -196,5 +196,9 @@ There are many career paths in web development, including front-end developer, b
     <string name="rank_2_apna_college"># Rank 2 (Apna College)</string>
     <string name="rank_3_anuj_bhaia"># Rank 3 (Anuj Bhaia)</string>
     <string name="rank_4_tech_gun"># Rank 4 (Tech Gun)</string>
+    <string name="title_activity_backend_framework_ruby_on_rails_bottom_navigation">
+        BackendFrameworkRubyOnRailsBottomNavigationActivity
+    </string>
+    <string name="apis">APIs</string>
 
 </resources>

@@ -25,7 +25,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -34,7 +34,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/BackendJavaResource1"
+                            android:id="@+id/BackendNodeJsResource1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="# Rank 1(Recommended)"
@@ -46,7 +46,7 @@
                             />
 
                         <ImageView
-                            android:id="@+id/BackendJavaResourceimage1"
+                            android:id="@+id/BackendNodeJsResourceimage1"
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
                             android:scaleType="centerCrop"
@@ -66,7 +66,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -75,7 +75,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/BackendJavaResource2"
+                            android:id="@+id/BackendNodeJsResource2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="# Rank 2"
@@ -87,7 +87,7 @@
                             />
 
                         <ImageView
-                            android:id="@+id/BackendJavaResourceimage2"
+                            android:id="@+id/BackendNodeJsResourceimage2"
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
                             android:scaleType="centerCrop"
@@ -107,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -115,7 +115,7 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <TextView
-                            android:id="@+id/BackendJavaResource3"
+                            android:id="@+id/BackendNodeJsResource3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="# Rank 3"
@@ -127,7 +127,7 @@
                             />
 
                         <ImageView
-                            android:id="@+id/BackendJavaResourceimage3"
+                            android:id="@+id/BackendNodeJsResourceimage3"
                             android:layout_width="match_parent"
                             android:layout_height="160dp"
                             android:scaleType="fitXY"
@@ -147,7 +147,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -156,7 +156,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/BackendJavaResource4"
+                            android:id="@+id/BackendNodeJsResource4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="# Rank 4"
@@ -168,11 +168,11 @@
                             />
 
                         <ImageView
-                            android:id="@+id/BackendJavaResourceimage4"
+                            android:id="@+id/BackendNodeJsResourceimage4"
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
-                            android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/freecodecamp" />
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/nodejs" />
 
 
                     </LinearLayout>
@@ -187,7 +187,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
@@ -196,7 +196,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/BackendJavaResource5"
+                            android:id="@+id/BackendNodeJsResource5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="# Rank 5"
@@ -208,7 +208,7 @@
                             />
 
                         <ImageView
-                            android:id="@+id/BackendJavaResourceimage5"
+                            android:id="@+id/BackendNodeJsResourceimage5"
                             android:layout_width="wrap_content"
                             android:layout_height="160dp"
                             android:scaleType="centerCrop"
