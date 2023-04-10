@@ -290,7 +290,7 @@
             android:name=".forum.forum_1"
             android:exported="false" />
         <activity
-            android:name=".Domains.AndroidDevelopment.AppActivity"
+            android:name=".Domains.AndroidDevelopment.Android_Development_Activity"
             android:exported="true"
             android:label="@string/title_activity_android_development"
             android:theme="@style/Theme.LCLAN.NoActionBar" />

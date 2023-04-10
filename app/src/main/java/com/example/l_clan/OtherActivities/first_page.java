@@ -72,18 +72,6 @@ public class first_page extends AppCompatActivity implements NavigationView.OnNa
                 Intent intent3 = new Intent(getApplicationContext(), coming_soon.class);
                 startActivity(intent3);
                 break;
-            case R.id.websites_menu:
-                Intent intent4 = new Intent(getApplicationContext(), coming_soon.class);
-                startActivity(intent4);
-                break;
-            case R.id.youtube_menu:
-                Intent intent5 = new Intent(getApplicationContext(), coming_soon.class);
-                startActivity(intent5);
-                break;
-            case R.id.documentation_menu:
-                Intent intent6 = new Intent(getApplicationContext(), coming_soon.class);
-                startActivity(intent6);
-                break;
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

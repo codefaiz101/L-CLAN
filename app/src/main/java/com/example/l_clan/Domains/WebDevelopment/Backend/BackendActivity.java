@@ -24,11 +24,11 @@ import com.example.l_clan.Models.BackendModels.ProgramminglanguageModels;
 import com.example.l_clan.Models.BackendModels.ServerModels;
 import com.example.l_clan.Models.BackendModels.TTModels;
 import com.example.l_clan.R;
-import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendDjangoBottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendJavaBottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendNodeJsBottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendPHPBottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendPythonBottomNavigationActivity;
+import com.example.l_clan.bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendRubyBottomNavigationActivity;
 import com.example.l_clan.bottomnavigation.BottomNavigationActivity;
 import com.google.android.material.navigation.NavigationView;
 
@@ -69,7 +69,7 @@ public class BackendActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intent1 = new Intent(getApplicationContext(), BackendNodeJsBottomNavigationActivity.class);
+                        Intent intent1 = new Intent(getApplicationContext(), BackendPythonBottomNavigationActivity.class);
                         startActivity(intent1);
                         break;
                     case 2:
@@ -77,7 +77,7 @@ public class BackendActivity extends AppCompatActivity {
                         startActivity(intent2);
                         break;
                     case 3:
-                        Intent intent3 = new Intent(getApplicationContext(), BackendDjangoBottomNavigationActivity.class);
+                        Intent intent3 = new Intent(getApplicationContext(), BackendRubyBottomNavigationActivity.class);
                         startActivity(intent3);
                         break;
                     case 4:

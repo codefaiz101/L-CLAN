@@ -20,13 +20,13 @@ import com.example.l_clan.Domains.AndroidDevelopment.Security.SecurityActivity;
 import com.example.l_clan.Domains.AndroidDevelopment.XML.XMLActivity;
 import com.example.l_clan.R;
 
-public class AppActivity extends AppCompatActivity {
+public class Android_Development_Activity extends AppCompatActivity {
     ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6, imageView7, imageView8, imageView9, imageView10;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_app);
+        setContentView(R.layout.activity_android_development_activity_app);
 
         imageView1 = findViewById(R.id.JavaImage);
         imageView2 = findViewById(R.id.kotlin);
@@ -43,14 +43,14 @@ public class AppActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), JavaActivity.class);
-                Toast.makeText(AppActivity.this, "Opening Java Page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Java Page", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AppActivity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), KotlinActivity.class);
                 startActivity(intent);
             }
@@ -59,7 +59,7 @@ public class AppActivity extends AppCompatActivity {
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AppActivity.this, "Opening Page .....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Page .....", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), AndroidStudioActivity.class);
                 startActivity(intent);
             }
@@ -68,7 +68,7 @@ public class AppActivity extends AppCompatActivity {
         imageView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AppActivity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), XMLActivity.class);
                 startActivity(intent);
             }
@@ -77,7 +77,7 @@ public class AppActivity extends AppCompatActivity {
         imageView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AppActivity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), AndroidComponentsActivity.class);
                 startActivity(intent);
             }
@@ -86,7 +86,7 @@ public class AppActivity extends AppCompatActivity {
         imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AppActivity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), DatabaseManagementActivity.class);
                 startActivity(intent);
             }
@@ -95,7 +95,7 @@ public class AppActivity extends AppCompatActivity {
         imageView7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AppActivity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), NetworkingActivity.class);
                 startActivity(intent);
             }
@@ -104,7 +104,7 @@ public class AppActivity extends AppCompatActivity {
         imageView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AppActivity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), SecurityActivity.class);
                 startActivity(intent);
             }
@@ -113,7 +113,7 @@ public class AppActivity extends AppCompatActivity {
         imageView9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AppActivity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), ReactNativeActivity.class);
                 startActivity(intent);
             }
@@ -122,7 +122,7 @@ public class AppActivity extends AppCompatActivity {
         imageView10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AppActivity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Android_Development_Activity.this, "Opening Page.....", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), FlutterActivity.class);
                 startActivity(intent);
             }

@@ -6,7 +6,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -17,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.l_clan.Adapter.DomainAdapter;
 import com.example.l_clan.Classes.RecyclerItemClickListener;
-import com.example.l_clan.Domains.AndroidDevelopment.AppActivity;
+import com.example.l_clan.Domains.AndroidDevelopment.Android_Development_Activity;
 import com.example.l_clan.Domains.WebDevelopment.WebActivity;
 import com.example.l_clan.Models.DomainModels;
 import com.example.l_clan.OtherActivities.MainActivity2;
@@ -67,7 +66,7 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
                             startActivity(intent);
                             break;
                         case 1:
-                            Intent intent1 = new Intent(getApplicationContext(), AppActivity.class);
+                            Intent intent1 = new Intent(getApplicationContext(), Android_Development_Activity.class);
                             startActivity(intent1);
                             break;
 
@@ -147,18 +146,35 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
                     Intent intent3 = new Intent(getApplicationContext(), coming_soon.class);
                     startActivity(intent3);
                     break;
-                case R.id.websites_menu:
-                    Intent intent4 = new Intent(getApplicationContext(), coming_soon.class);
+                case R.id.WEB_DEVELOPMENT:
+                    Intent intent4 = new Intent(getApplicationContext(), WebActivity.class);
                     startActivity(intent4);
                     break;
-                case R.id.youtube_menu:
-                    Intent intent5 = new Intent(getApplicationContext(), coming_soon.class);
+                case R.id.ANDROID_DEVELOPMENT:
+                    Intent intent5 = new Intent(getApplicationContext(), Android_Development_Activity.class);
                     startActivity(intent5);
                     break;
-                case R.id.documentation_menu:
+                case R.id.CLOUD_DEVELOPMENT:
                     Intent intent6 = new Intent(getApplicationContext(), coming_soon.class);
                     startActivity(intent6);
                     break;
+                case R.id.CYBER_SECURITY:
+                    Intent intent7 = new Intent(getApplicationContext(), coming_soon.class);
+                    startActivity(intent7);
+                    break;
+                case R.id.BLOCKCHAIN_DEVELOPMENT:
+                    Intent intent8 = new Intent(getApplicationContext(), coming_soon.class);
+                    startActivity(intent8);
+                    break;
+                case R.id.ARTIFICIAL_INTELLIGENCE:
+                    Intent intent9 = new Intent(getApplicationContext(), coming_soon.class);
+                    startActivity(intent9);
+                    break;
+                case R.id.DATABASE_MANAGEMENT:
+                    Intent intent10 = new Intent(getApplicationContext(), coming_soon.class);
+                    startActivity(intent10);
+                    break;
+
             }
 
             drawerLayout.closeDrawer(GravityCompat.START);

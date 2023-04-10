@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.l_clan.Adapter.DomainAdapter;
 import com.example.l_clan.Classes.RecyclerItemClickListener;
-import com.example.l_clan.Domains.AndroidDevelopment.AppActivity;
+import com.example.l_clan.Domains.AndroidDevelopment.Android_Development_Activity;
 import com.example.l_clan.Domains.DomainsPartActivity;
 import com.example.l_clan.Domains.WebDevelopment.WebActivity;
 import com.example.l_clan.Models.DomainModels;
@@ -68,7 +68,7 @@ public class FinalDomains extends Fragment {
                             startActivity(intent);
                             break;
                         case 1:
-                            Intent intent1 = new Intent(getContext(), AppActivity.class);
+                            Intent intent1 = new Intent(getContext(), Android_Development_Activity.class);
                             startActivity(intent1);
                             break;
 

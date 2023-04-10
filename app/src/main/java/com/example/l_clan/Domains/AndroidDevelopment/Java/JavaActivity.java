@@ -5,7 +5,6 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.l_clan.Domains.AndroidDevelopment.AppActivity;
 import com.example.l_clan.R;
 
 public class JavaActivity extends AppCompatActivity {

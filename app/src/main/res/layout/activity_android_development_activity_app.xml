@@ -7,7 +7,7 @@
     android:orientation="horizontal"
     android:textAlignment="center"
     android:background="@drawable/userprofilebgimg"
-    tools:context=".Domains.AndroidDevelopment.AppActivity">
+    tools:context=".Domains.AndroidDevelopment.Android_Development_Activity">
 
     <!--    <androidx.appcompat.widget.Toolbar-->
     <!--        android:id="@+id/webdevelopmenttoolbar"-->

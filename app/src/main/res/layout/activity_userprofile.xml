@@ -22,23 +22,26 @@
         android:src="@drawable/userprofile" />
 
     <TextView
+        android:textAllCaps="true"
         android:id="@+id/showusername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:background="#cbe3f1"
         android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
+        android:textColor="#3f51b5"
+        android:text="pasha1"
+        android:fontFamily="@font/marmelad"
+        android:textSize="40sp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:backgroundTint="#008FE1"
         android:onClick="startlearning"
         android:padding="8dp"

@@ -33,21 +33,37 @@
         </menu>
     </item>
 
-    <item android:title="where to learn">
+    <item android:title="What To Learn">
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/websites_menu"
+                    android:id="@+id/WEB_DEVELOPMENT"
                     android:icon="@drawable/web_icon"
-                    android:title="websites" />
+                    android:title="WEB DEVELOPMENT" />
                 <item
-                    android:id="@+id/youtube_menu"
+                    android:id="@+id/ANDROID_DEVELOPMENT"
                     android:icon="@drawable/youtubelogo"
-                    android:title="Youtube" />
+                    android:title="ANDROID APP DEVELOPMENT" />
                 <item
-                    android:id="@+id/documentation_menu"
+                    android:id="@+id/CLOUD_DEVELOPMENT"
                     android:icon="@drawable/documenticon"
-                    android:title="documentation" />
+                    android:title="CLOUD DEVELOPMENT" />
+                <item
+                    android:id="@+id/CYBER_SECURITY"
+                    android:icon="@drawable/documenticon"
+                    android:title="CYBER SECURITY" />
+                <item
+                    android:id="@+id/BLOCKCHAIN_DEVELOPMENT"
+                    android:icon="@drawable/documenticon"
+                    android:title="BLOCKCHAIN DEVELOPMENT" />
+                <item
+                    android:id="@+id/ARTIFICIAL_INTELLIGENCE"
+                    android:icon="@drawable/documenticon"
+                    android:title="ARTIFICIAL INTELLIGENCE"/>
+                <item
+                android:id="@+id/DATABASE_MANAGEMENT"
+                android:icon="@drawable/documenticon"
+                android:title="DATABASE MANAGEMENT"/>
             </group>
         </menu>
     </item>
