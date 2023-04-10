@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/userprofilebgimg"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +9,10 @@
     tools:context=".Domains.DomainsPartActivity"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 <!--    <TextView-->
 <!--        android:id="@+id/textView"-->
 <!--        android:layout_width="110dp"-->
@@ -19,27 +24,20 @@
 <!--        android:textColor="@color/black"-->
 <!--        android:textSize="20sp"-->
 <!--        />-->
-    <RelativeLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:gravity="center"
+        android:layout_height="wrap_content"
         android:background="#28b0ff"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:fontFamily="@font/marmelad"
-            android:gravity="center"
-            android:padding="1dp"
-            android:text="DOMAINS"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-    </RelativeLayout>
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="40dp"
+        app:title="DOMAINS"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" >
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="12dp"
@@ -51,3 +49,12 @@
         />
 
 </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/headermenu"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

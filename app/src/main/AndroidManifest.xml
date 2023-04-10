@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/lclanlogo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LCLAN"
+        android:theme="@style/new_theme"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <!-- backendBottomNavigationActivity BackendDevelopmentToolsFragmentpart -->

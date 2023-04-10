@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Pair;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.l_clan.R;
 import com.google.android.material.textfield.TextInputEditText;
@@ -33,6 +35,7 @@ public class loginpage extends AppCompatActivity {
     TextInputEditText username1text;
     TextInputLayout password1;
     TextInputEditText password1text;
+//    public static final String SHARED_PREFS ="sharedPrefs";  //keeplogin
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +50,7 @@ public class loginpage extends AppCompatActivity {
         password1text= findViewById(R.id.password1text);
         gotosignup = findViewById(R.id.gotosignup1);
         go = findViewById(R.id.go1);
+//        checkbox(); //keep login
         gotosignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +68,20 @@ public class loginpage extends AppCompatActivity {
         });
 
     }
+
+//    private void checkbox() {
+//        SharedPreferences sharedPreferences = getSharedPreferences (SHARED_PREFS, MODE_PRIVATE);
+//        String check = sharedPreferences.getString("name","");
+//        if(check.equals("true")) {
+//            Toast.makeText(loginpage.this, "Login Succesfully", Toast.LENGTH_SHORT).show();
+//            Intent intent = new Intent(loginpage.this, userprofile.class);
+//            String usernamebyuser = username1text.getText().toString();
+//            intent.putExtra("username2",usernamebyuser);
+//            startActivity(intent);
+//            finish();
+//        }
+//    }
+
     public void onBackPressed() {
         //do nothing
     }
@@ -112,6 +130,11 @@ public class loginpage extends AppCompatActivity {
         checkusers.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+//                SharedPreferences sharedPreferences = getSharedPreferences (SHARED_PREFS, MODE_PRIVATE); SharedPreferences. Editor editor = sharedPreferences.edit();
+//                editor.putString("name","true");
+//                editor.apply(); //keep login
+
                 if (snapshot.exists()){
                     username1.setError(null);
                     username1.setErrorEnabled(false);

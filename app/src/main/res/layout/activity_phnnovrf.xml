@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="verify phone no "
+            android:text="Verify Phone-No"
             android:textColor="@color/black"
             android:textSize="30sp" />
     </com.google.android.material.textfield.TextInputLayout>
