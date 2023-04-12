@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:textAlignment="center"
-    android:background="@drawable/userprofilebgimg"
+    android:background="@color/chatbackground"
     tools:context=".Domains.AndroidDevelopment.Android_Development_Activity">
 
     <!--    <androidx.appcompat.widget.Toolbar-->
@@ -41,6 +41,7 @@
             android:padding="10dp">
 
             <TextView
+                android:textColor="@color/default_text_color"
                 android:id="@+id/AndTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -73,6 +74,7 @@
                 android:id="@+id/Andstep1"
                 android:layout_width="match_parent"
                 android:layout_height="276dp"
+                android:textColor="@color/default_text_color"
                 android:justificationMode="inter_word"
                 android:text="@string/title_roadmap_app_development"
                 android:textStyle="bold" />
@@ -114,7 +116,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="#28b0ff"
                                 android:text="JAVA"
-                                android:textColor="@color/white"
+                                android:textColor="@color/default_text_color"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -154,7 +156,7 @@
                                 android:background="#28b0ff"
                                 android:scaleType="fitXY"
                                 android:text="KOTLIN"
-                                android:textColor="@color/white"
+                                android:textColor="@color/default_text_color"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -165,6 +167,7 @@
                 android:id="@+id/step2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/default_text_color"
                 android:justificationMode="inter_word"
                 android:text="@string/step_2_app_development"
                 android:textStyle="bold"
@@ -204,7 +207,7 @@
                             android:layout_marginTop="5dp"
                             android:background="#28b0ff"
                             android:text="ANDROID STUDIO"
-                            android:textColor="@color/white"
+                            android:textColor="@color/default_text_color"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -215,6 +218,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
+                android:textColor="@color/default_text_color"
                 android:text="@string/step_3_app_development"
                 android:textStyle="bold"
                 tools:ignore="DuplicateIds" />
@@ -253,7 +257,7 @@
                             android:layout_marginTop="5dp"
                             android:background="#28b0ff"
                             android:text="XML"
-                            android:textColor="@color/white"
+                            android:textColor="@color/default_text_color"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -264,6 +268,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
+                android:textColor="@color/default_text_color"
                 android:text="@string/step_4_app_development"
                 android:textStyle="bold"
                 tools:ignore="DuplicateIds" />
@@ -301,8 +306,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:background="#28b0ff"
+                            android:textColor="@color/default_text_color"
                             android:text="ANDROID COMPONENTS"
-                            android:textColor="@color/white"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -315,6 +320,7 @@
                 android:justificationMode="inter_word"
                 android:text="@string/step_5_app_development"
                 android:textStyle="bold"
+                android:textColor="@color/default_text_color"
                 tools:ignore="DuplicateIds" />
 
             <LinearLayout
@@ -344,6 +350,7 @@
                             app:srcCompat="@drawable/database" />
 
                         <TextView
+                            android:textColor="@color/default_text_color"
                             android:id="@+id/database1"
                             style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
                             android:layout_width="match_parent"
@@ -351,7 +358,6 @@
                             android:layout_marginTop="5dp"
                             android:background="#28b0ff"
                             android:text="DATABASE MANAGEMENT"
-                            android:textColor="@color/white"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -364,6 +370,7 @@
                 android:justificationMode="inter_word"
                 android:text="@string/step_6_app_development"
                 android:textStyle="bold"
+                android:textColor="@color/default_text_color"
                 tools:ignore="DuplicateIds" />
 
             <LinearLayout
@@ -400,7 +407,7 @@
                             android:layout_marginTop="5dp"
                             android:background="#28b0ff"
                             android:text="NETWORKING AND APIs"
-                            android:textColor="@color/white"
+                            android:textColor="@color/default_text_color"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -413,6 +420,7 @@
                 android:justificationMode="inter_word"
                 android:text="@string/step_7_app_development"
                 android:textStyle="bold"
+                android:textColor="@color/default_text_color"
                 tools:ignore="DuplicateIds" />
 
             <LinearLayout
@@ -449,7 +457,7 @@
                             android:layout_marginTop="5dp"
                             android:background="#28b0ff"
                             android:text="SECURITY AND PERFORMANCE"
-                            android:textColor="@color/white"
+                            android:textColor="@color/default_text_color"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -457,6 +465,7 @@
 
             <TextView
                 android:id="@+id/step8"
+                android:textColor="@color/default_text_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
@@ -501,7 +510,7 @@
                             android:layout_height="wrap_content"
                             android:background="#28b0ff"
                             android:text="REACT NATIVE "
-                            android:textColor="@color/white"
+                            android:textColor="@color/default_text_color"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -539,7 +548,7 @@
                             android:layout_height="wrap_content"
                             android:background="#28b0ff"
                             android:text="FLUTTER "
-                            android:textColor="@color/white"
+                            android:textColor="@color/default_text_color"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -553,6 +562,7 @@
                 android:justificationMode="inter_word"
                 android:text="@string/step_9_app_development"
                 android:textStyle="bold"
+                android:textColor="@color/default_text_color"
                 tools:ignore="DuplicateIds" />
 
 

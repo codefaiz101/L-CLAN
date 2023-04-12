@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.l_clan.R;
@@ -18,6 +19,7 @@ public class signup_page extends AppCompatActivity {
 
     Button gotologin,go2, btnveridyphn ;
     TextInputLayout fullname2,username2,email2,password2,phoneno2;
+    LinearLayout linearLayout; //focus down
 
     public static Activity myActivity;
 
@@ -26,6 +28,10 @@ public class signup_page extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_page);
+        linearLayout = findViewById(R.id.linearlayoutsignupinput); //focus down
+        int lastChildIndex = linearLayout.getChildCount() - 1; //focus down
+        View lastChild = linearLayout.getChildAt(lastChildIndex); //focus down
+        lastChild.requestFocus(); //focus down
         gotologin = findViewById(R.id.gotologin2);
         fullname2 = findViewById(R.id.fullname2);
         username2 = findViewById(R.id.username2);

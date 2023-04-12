@@ -36,6 +36,9 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+<!--        for default font color and font-->
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <style name="Theme.LCLAN.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

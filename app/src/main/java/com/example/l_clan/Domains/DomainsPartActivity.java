@@ -2,8 +2,11 @@ package com.example.l_clan.Domains;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -27,11 +30,12 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
-public class DomainsPartActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class DomainsPartActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
         RecyclerView recyclerView;
         DrawerLayout drawerLayout;
         NavigationView navigationView;
         Toolbar toolbar;
+        LinearLayout linearLayout;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -40,6 +44,7 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
             navigationView = findViewById(R.id.navigation_view);
             toolbar = findViewById(R.id.toolbar);
             drawerLayout = findViewById(R.id.drawerlayout);
+//            linearLayout =findViewById(R.id.linearlayout);
 
             ArrayList<DomainModels> list = new ArrayList<>();
 //            list.add(new DomainModels("WEB APPLICATION DEVELOPMENT"),R.drawable.webdevelopment);
@@ -109,14 +114,76 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
 // Manually add the Toolbar
             setSupportActionBar(toolbar);
 
-//        navigationView.bringToFront();
+        navigationView.bringToFront();
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigattion_open, R.string.navigattion_close);
             drawerLayout.addDrawerListener(toggle);
             toggle.syncState();
             navigationView.setNavigationItemSelectedListener(this);
             navigationView.setCheckedItem(R.id.home_menu);
         }
-        @Override
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu){
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.activity_main_drawer,menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        switch (item.getItemId()) {
+//            case R.id.home_menu:
+//                break;
+//            case R.id.settings_menu:
+//                Intent intent = new Intent(getApplicationContext(), coming_soon.class);
+//                startActivity(intent);
+//                break;
+//            case R.id.userprofile_menu:
+//                Intent intent1 = new Intent(getApplicationContext(), userprofile.class);
+////                intent1.putExtra("username2", currentuser.getDisplayName());
+//                startActivity(intent1);
+//                break;
+//            case R.id.history_menu:
+//                Intent intent2 = new Intent(getApplicationContext(), coming_soon.class);
+//                startActivity(intent2);
+//                break;
+//            case R.id.info_menu:
+//                Intent intent3 = new Intent(getApplicationContext(), coming_soon.class);
+//                startActivity(intent3);
+//                break;
+//            case R.id.WEB_DEVELOPMENT:
+//                Intent intent4 = new Intent(getApplicationContext(), WebActivity.class);
+//                startActivity(intent4);
+//                break;
+//            case R.id.ANDROID_DEVELOPMENT:
+//                Intent intent5 = new Intent(getApplicationContext(), Android_Development_Activity.class);
+//                startActivity(intent5);
+//                break;
+//            case R.id.CLOUD_DEVELOPMENT:
+//                Intent intent6 = new Intent(getApplicationContext(), coming_soon.class);
+//                startActivity(intent6);
+//                break;
+//            case R.id.CYBER_SECURITY:
+//                Intent intent7 = new Intent(getApplicationContext(), coming_soon.class);
+//                startActivity(intent7);
+//                break;
+//            case R.id.BLOCKCHAIN_DEVELOPMENT:
+//                Intent intent8 = new Intent(getApplicationContext(), coming_soon.class);
+//                startActivity(intent8);
+//                break;
+//            case R.id.ARTIFICIAL_INTELLIGENCE:
+//                Intent intent9 = new Intent(getApplicationContext(), coming_soon.class);
+//                startActivity(intent9);
+//                break;
+//            case R.id.DATABASE_MANAGEMENT:
+//                Intent intent10 = new Intent(getApplicationContext(), coming_soon.class);
+//                startActivity(intent10);
+//                break;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
+
+    @Override
         public void onBackPressed() {
             if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                 drawerLayout.closeDrawer(GravityCompat.START);
