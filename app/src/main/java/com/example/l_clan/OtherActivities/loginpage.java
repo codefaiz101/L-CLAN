@@ -4,13 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Base64;
 import android.util.Pair;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +28,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.security.SecureRandom;
+
 public class loginpage extends AppCompatActivity {
     Button gotosignup;
     Button go;
@@ -35,7 +40,9 @@ public class loginpage extends AppCompatActivity {
     TextInputEditText username1text;
     TextInputLayout password1;
     TextInputEditText password1text;
+    private CheckBox rememberMeCheckbox;  //keeplogin
 //    public static final String SHARED_PREFS ="sharedPrefs";  //keeplogin
+//    public static String usernamealwaysslogin;      //keeplogin
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +57,6 @@ public class loginpage extends AppCompatActivity {
         password1text= findViewById(R.id.password1text);
         gotosignup = findViewById(R.id.gotosignup1);
         go = findViewById(R.id.go1);
-//        checkbox(); //keep login
         gotosignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,6 +73,33 @@ public class loginpage extends AppCompatActivity {
             }
         });
 
+        checkifalreadyloggedin();
+
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!validateusername2() | !validatenamepassword2()){
+                    return;
+                }
+                else{
+                    boolean rememberMe = rememberMeCheckbox.isChecked();
+                    isuser(rememberMe);
+                }
+            }
+        });
+
+    }
+
+    private void checkifalreadyloggedin() {
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        String token = sharedPreferences.getString("token", null);
+        long tokenExpiration = sharedPreferences.getLong("tokenExpiration", 0);
+        if (token != null && System.currentTimeMillis() < tokenExpiration) {
+            // Automatically log the user in
+        } else {
+            // Show the login screen
+        }
+
     }
 
 //    private void checkbox() {
@@ -81,6 +114,14 @@ public class loginpage extends AppCompatActivity {
 //            finish();
 //        }
 //    }
+
+    //keeplogin
+    private String generateToken() {
+        SecureRandom random = new SecureRandom();
+        byte[] tokenBytes = new byte[32];
+        random.nextBytes(tokenBytes);
+        return Base64.encodeToString(tokenBytes, Base64.DEFAULT);
+    }
 
     public void onBackPressed() {
         //do nothing
@@ -110,16 +151,8 @@ public class loginpage extends AppCompatActivity {
             return true;
         }
     }
-    public void loginuser(View view){
-        if (!validateusername2() | !validatenamepassword2()){
-            return;
-        }
-        else{
-            isuser();
-        }
-    }
 
-    private void isuser() {
+    private void isuser(Boolean rememberMe) {
         String usernamebyuser = username1text.getText().toString();  //also can work by adding getEdittext
         String passwordbyuser = password1text.getText().toString();
 
@@ -139,6 +172,20 @@ public class loginpage extends AppCompatActivity {
                     username1.setError(null);
                     username1.setErrorEnabled(false);
 
+                    //keeplogin code
+                    SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    if (rememberMe) {
+                        String token = generateToken();
+                        editor.putString("token", token);
+                        editor.putLong("tokenExpiration", System.currentTimeMillis() + (30 * 24 * 60 * 60 * 1000)); // Set token expiration to 30 days from now
+                    } else {
+                        editor.remove("token");
+                        editor.remove("tokenExpiration");
+                    }
+                    editor.apply();
+
+
                     String passwordfromDB = snapshot.child(usernamebyuser).child("password2").getValue(String.class);
                         if (passwordfromDB.equals(passwordbyuser)) {
                             username1.setError(null);
@@ -148,6 +195,8 @@ public class loginpage extends AppCompatActivity {
                             String emailfromDB = snapshot.child(usernamebyuser).child("email2").getValue(String.class);
                             String phonenofromDB = snapshot.child(usernamebyuser).child("phoneno2").getValue(String.class);
                             String usernamefromDB = snapshot.child(usernamebyuser).child("username2").getValue(String.class);
+
+//                            usernamealwaysslogin = usernamefromDB;  //keep login
 
                             Intent intent = new Intent(loginpage.this, userprofile.class);
 

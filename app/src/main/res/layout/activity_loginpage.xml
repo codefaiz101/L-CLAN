@@ -16,6 +16,7 @@
         android:layout_height="75dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
         android:contentDescription="logo"
         android:transitionName="logo_image"
         app:srcCompat="@drawable/lclanlogo" />
@@ -51,7 +52,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -95,6 +95,14 @@
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
+    <CheckBox
+        android:id="@+id/rememberMeCheckbox"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/default_text_color"
+        android:text="Remember me" />
+
     <Button
         android:id="@+id/forgetpass1"
         android:layout_width="200dp"
@@ -115,7 +123,6 @@
         android:layout_marginBottom="5dp"
         android:backgroundTint="#28b0ff"
         android:elevation="0dp"
-        android:onClick="loginuser"
         android:text="go"
         android:textColor="@color/white"
         android:transitionName="go" />
