@@ -125,7 +125,8 @@
         android:elevation="0dp"
         android:text="go"
         android:textColor="@color/white"
-        android:transitionName="go" />
+        android:transitionName="go"
+        android:onClick="login"/>
 
     <Button
         android:id="@+id/gotosignup1"

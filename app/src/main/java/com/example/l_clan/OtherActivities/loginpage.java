@@ -40,7 +40,7 @@ public class loginpage extends AppCompatActivity {
     TextInputEditText username1text;
     TextInputLayout password1;
     TextInputEditText password1text;
-    private CheckBox rememberMeCheckbox;  //keeplogin
+//    private CheckBox rememberMeCheckbox;  //keeplogin
 //    public static final String SHARED_PREFS ="sharedPrefs";  //keeplogin
 //    public static String usernamealwaysslogin;      //keeplogin
     @Override
@@ -73,34 +73,34 @@ public class loginpage extends AppCompatActivity {
             }
         });
 
-        checkifalreadyloggedin();
+//        checkifalreadyloggedin();
 
-        go.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!validateusername2() | !validatenamepassword2()){
-                    return;
-                }
-                else{
-                    boolean rememberMe = rememberMeCheckbox.isChecked();
-                    isuser(rememberMe);
-                }
-            }
-        });
-
-    }
-
-    private void checkifalreadyloggedin() {
-        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
-        String token = sharedPreferences.getString("token", null);
-        long tokenExpiration = sharedPreferences.getLong("tokenExpiration", 0);
-        if (token != null && System.currentTimeMillis() < tokenExpiration) {
-            // Automatically log the user in
-        } else {
-            // Show the login screen
-        }
+//        go.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!validateusername2() | !validatenamepassword2()){
+//                    return;
+//                }
+//                else{
+//                    boolean rememberMe = rememberMeCheckbox.isChecked();
+//                    isuser(rememberMe);
+//                }
+//            }
+//        });
 
     }
+
+//    private void checkifalreadyloggedin() {
+//        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+//        String token = sharedPreferences.getString("token", null);
+//        long tokenExpiration = sharedPreferences.getLong("tokenExpiration", 0);
+//        if (token != null && System.currentTimeMillis() < tokenExpiration) {
+//            // Automatically log the user in
+//        } else {
+//            // Show the login screen
+//        }
+//
+//    }
 
 //    private void checkbox() {
 //        SharedPreferences sharedPreferences = getSharedPreferences (SHARED_PREFS, MODE_PRIVATE);
@@ -116,15 +116,23 @@ public class loginpage extends AppCompatActivity {
 //    }
 
     //keeplogin
-    private String generateToken() {
-        SecureRandom random = new SecureRandom();
-        byte[] tokenBytes = new byte[32];
-        random.nextBytes(tokenBytes);
-        return Base64.encodeToString(tokenBytes, Base64.DEFAULT);
-    }
+//    private String generateToken() {
+//        SecureRandom random = new SecureRandom();
+//        byte[] tokenBytes = new byte[32];
+//        random.nextBytes(tokenBytes);
+//        return Base64.encodeToString(tokenBytes, Base64.DEFAULT);
+//    }
 
     public void onBackPressed() {
         //do nothing
+    }
+    public void login(View view){
+        if (!validateusername2() | !validatenamepassword2()){
+            return;
+        }
+        else{
+            isuser();
+        }
     }
     private boolean validateusername2(){
         String val = username1.getEditText().getText().toString();
@@ -152,7 +160,8 @@ public class loginpage extends AppCompatActivity {
         }
     }
 
-    private void isuser(Boolean rememberMe) {
+//    private void isuser(Boolean rememberMe) {
+    private void isuser() {
         String usernamebyuser = username1text.getText().toString();  //also can work by adding getEdittext
         String passwordbyuser = password1text.getText().toString();
 
@@ -173,17 +182,17 @@ public class loginpage extends AppCompatActivity {
                     username1.setErrorEnabled(false);
 
                     //keeplogin code
-                    SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor = sharedPreferences.edit();
-                    if (rememberMe) {
-                        String token = generateToken();
-                        editor.putString("token", token);
-                        editor.putLong("tokenExpiration", System.currentTimeMillis() + (30 * 24 * 60 * 60 * 1000)); // Set token expiration to 30 days from now
-                    } else {
-                        editor.remove("token");
-                        editor.remove("tokenExpiration");
-                    }
-                    editor.apply();
+//                    SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+//                    SharedPreferences.Editor editor = sharedPreferences.edit();
+//                    if (rememberMe) {
+//                        String token = generateToken();
+//                        editor.putString("token", token);
+//                        editor.putLong("tokenExpiration", System.currentTimeMillis() + (30 * 24 * 60 * 60 * 1000)); // Set token expiration to 30 days from now
+//                    } else {
+//                        editor.remove("token");
+//                        editor.remove("tokenExpiration");
+//                    }
+//                    editor.apply();
 
 
                     String passwordfromDB = snapshot.child(usernamebyuser).child("password2").getValue(String.class);
