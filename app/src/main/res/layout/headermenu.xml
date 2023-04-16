@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/chatbackground"
     android:layout_marginTop="30dp"
     android:padding="11dp"
     android:layout_width="match_parent"
@@ -29,5 +30,12 @@
         android:textSize="13sp"
         android:fontFamily="@font/marmelad"
         />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="2dp"
+        android:background="@color/default_text_color" />
 
 </LinearLayout>

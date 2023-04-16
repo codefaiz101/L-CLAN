@@ -23,7 +23,7 @@
         <item name="windowActionBar">false</item>
     </style>
 
-    <style name="new_theme" parent="Theme.MaterialComponents">
+    <style name="new_theme_faiz" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <!-- Primary brand color. -->

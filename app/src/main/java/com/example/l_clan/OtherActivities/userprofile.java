@@ -4,13 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 //import com.example.l_clan.Domains.AndroidDevelopment.AndroidDevelopmentActivity;
 import com.example.l_clan.Domains.DomainsPartActivity;
 import com.example.l_clan.R;
-import com.example.l_clan.forum.forum_1;
+import com.example.l_clan.forum.forum_main;
+import com.example.l_clan.forum.group_chat;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class userprofile extends AppCompatActivity {
@@ -43,7 +45,7 @@ public class userprofile extends AppCompatActivity {
     }
 
     public void setWaytoforum(View view) {
-        Intent intent = new Intent(userprofile.this, forum_1.class);
+        Intent intent = new Intent(userprofile.this, forum_main.class);
         intent.putExtra("username",usernamefromintent);
         startActivity(intent);
     }

@@ -44,7 +44,7 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
             navigationView = findViewById(R.id.navigation_view);
             toolbar = findViewById(R.id.toolbar);
             drawerLayout = findViewById(R.id.drawerlayout);
-//            linearLayout =findViewById(R.id.linearlayout);
+            linearLayout =findViewById(R.id.linearlayout);
 
             ArrayList<DomainModels> list = new ArrayList<>();
 //            list.add(new DomainModels("WEB APPLICATION DEVELOPMENT"),R.drawable.webdevelopment);
@@ -55,6 +55,7 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
             list.add(new DomainModels("BLOCKCHAIN DEVELOPMENT", R.drawable.blockchiandevelopment));
             list.add(new DomainModels("ARTIFICIAL INTELLEGENCE DEVELOPMENT", R.drawable.aidevelopment));
             list.add(new DomainModels("DATABASE DEVELOPMENT", R.drawable.databasedevelopment));
+
             DomainAdapter adapter = new DomainAdapter(list , this);
             recyclerView.setAdapter(adapter);
             LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -111,15 +112,14 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
             }
             ));
 
-// Manually add the Toolbar
-            setSupportActionBar(toolbar);
-
+        // Manually add the Toolbar
+        setSupportActionBar(toolbar);
         navigationView.bringToFront();
-            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigattion_open, R.string.navigattion_close);
-            drawerLayout.addDrawerListener(toggle);
-            toggle.syncState();
-            navigationView.setNavigationItemSelectedListener(this);
-            navigationView.setCheckedItem(R.id.home_menu);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigattion_open, R.string.navigattion_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.home_menu);
         }
 
 //    @Override
@@ -128,7 +128,7 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
 //        inflater.inflate(R.menu.activity_main_drawer,menu);
 //        return super.onCreateOptionsMenu(menu);
 //    }
-//
+
 //    @Override
 //    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 //        switch (item.getItemId()) {
@@ -183,7 +183,7 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
 //        return super.onOptionsItemSelected(item);
 //    }
 
-    @Override
+        @Override
         public void onBackPressed() {
             if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                 drawerLayout.closeDrawer(GravityCompat.START);

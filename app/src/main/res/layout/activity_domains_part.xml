@@ -51,6 +51,8 @@
 
 </LinearLayout>
     <com.google.android.material.navigation.NavigationView
+        app:itemTextColor="@color/default_text_color"
+        android:background="@color/chatbackground"
         android:id="@+id/navigation_view"
         android:visibility="visible"
         android:layout_width="wrap_content"
