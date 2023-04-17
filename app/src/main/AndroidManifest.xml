@@ -13,20 +13,31 @@
         android:theme="@style/new_theme_faiz"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <activity
-            android:name=".forum.individual_chat_interface"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".forum.forum_main"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity> <!-- backendBottomNavigationActivity BackendDevelopmentToolsFragmentpart -->
+        <!-- backendBottomNavigationActivity Aidevelopment -->
+        <activity android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendPythonBottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.Artificial_Intelligence_Bottom_NavigationActivity.AI_R_Programming_BottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendJavaBottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.Artificial_Intelligence_Bottom_NavigationActivity.AI_C_Plus_BottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.Artificial_Intelligence_Bottom_NavigationActivity.ML_Libraries_BottomNavigationActivity.Ml_ScikitLearn_BottonNavigationActivity"/>
+        <activity android:name=".bottomnavigation.Artificial_Intelligence_Bottom_NavigationActivity.ML_Libraries_BottomNavigationActivity.Ml_TensorFlow_BottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.Artificial_Intelligence_Bottom_NavigationActivity.ML_Libraries_BottomNavigationActivity.Ml_Keras_BottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.Artificial_Intelligence_Bottom_NavigationActivity.Ml_CC_Platforms_BottomNavigationActivity.MlawsBottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.Artificial_Intelligence_Bottom_NavigationActivity.Ml_CC_Platforms_BottomNavigationActivity.MlGCPBottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.Artificial_Intelligence_Bottom_NavigationActivity.ML_Libraries_BottomNavigationActivity.NN_Pytorch_BottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.BackendWebServerFragmentPart.BackendWebServerApacheBottomNavigationActivity"/>
+        <activity android:name=".bottomnavigation.Artificial_Intelligence_Bottom_NavigationActivity.ML_Libraries_BottomNavigationActivity.RL_OpenAi_BottomNavigationActivity"/>
+        <activity android:name=".Domains.ArtificialIntellegenceDevelopment.Artificial_Intelligence_Learning.AI_Learning_Activity"/>
+        <activity android:name=".Domains.ArtificialIntellegenceDevelopment.Machine_Learning.Machine_Learning_Activity"/>
+        <activity android:name=".Domains.ArtificialIntellegenceDevelopment.Deep_Learning.Deep_Learning_Activity"/>
+        <activity android:name=".Domains.ArtificialIntellegenceDevelopment.Neural_Network.Neural_Network_Activity"/>
+        <activity android:name=".Domains.ArtificialIntellegenceDevelopment.Natural_Laguage_Processing.Natural_Language_Processing_Activity"/>
+        <activity android:name=".Domains.ArtificialIntellegenceDevelopment.Reinforcement_Learning.Reinforcement_Learning_Activity"/>
+        <activity android:name=".Domains.ArtificialIntellegenceDevelopment.Artificial_Intellengence_Activity"/>
+        <activity android:name=".forum.individual_chat_interface"/>
+
+
+        <!-- backendBottomNavigationActivity BackendDevelopmentToolsFragmentpart -->
+        <activity android:name=".forum.group_chat"/>
         <activity
             android:name=".bottomnavigation.BackendDevelopmentToolsFragmentpart.BackendDevelopmentToolsJenkinsBottomNavigationActivity"
             android:exported="false" />
@@ -54,9 +65,7 @@
         <activity
             android:name=".bottomnavigation.BackendWebServerFragmentPart.BackendWebServerNignxBottomNavigationActivity"
             android:exported="false" />
-        <activity
-            android:name=".bottomnavigation.BackendWebServerFragmentPart.BackendWebServerApacheBottomNavigationActivity"
-            android:exported="false" /> <!-- backendBottomNavigationActivity BackendApiFragment -->
+        <!-- backendBottomNavigationActivity BackendApiFragment -->
         <activity
             android:name=".bottomnavigation.BackendApiFragment.BackendApiBottomNavigationActivity"
             android:exported="false" /> <!-- backendBottomNavigationActivity BackendDatabaseFragmentpart -->
@@ -111,9 +120,6 @@
         <meta-data
             android:name="android.app.lib_name"
             android:value="" /> <!-- backendBottomNavigationActivity_Programming_Languages -->
-        <activity
-            android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendJavaBottomNavigationActivity"
-            android:exported="false" />
 
         <meta-data
             android:name="android.app.lib_name"
@@ -135,9 +141,6 @@
             android:name="android.app.lib_name"
             android:value="" />
 
-        <activity
-            android:name=".bottomnavigation.BackendBottomNavigationActivities.BackendBottomLanguages.BackendPythonBottomNavigationActivity"
-            android:exported="false" />
 
         <meta-data
             android:name="android.app.lib_name"
@@ -300,7 +303,7 @@
             android:name=".Domains.WebDevelopment.WebActivity"
             android:exported="false" />
         <activity
-            android:name=".forum.group_chat"
+            android:name=".forum.forum_main"
             android:exported="false" />
         <activity
             android:name=".Domains.AndroidDevelopment.Android_Development_Activity"
@@ -349,8 +352,7 @@
         </activity>
         <activity
             android:name=".OtherActivities.userprofile"
-            android:exported="true">
-
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -378,6 +380,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

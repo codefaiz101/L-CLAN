@@ -50,15 +50,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="1] PROGRAMMING LANGUAGES"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:justificationMode="inter_word"
+                android:textStyle="bold"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/ProgrammingRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="12dp"
-                android:scaleType="centerInside"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 android:scrollbars="horizontal"
                 tools:listitem="@layout/backendsinglerv" />
 
@@ -69,15 +72,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="2] FRAMEWORKS"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:justificationMode="inter_word"
+                android:textStyle="bold"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/FrameworkRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="12dp"
-                android:scaleType="centerInside"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 android:scrollbars="horizontal"
                 tools:listitem="@layout/fremworkstylesingle" />
 
@@ -88,15 +94,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="3] DATABASES"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:justificationMode="inter_word"
+                android:textStyle="bold"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/DBMSRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="12dp"
-                android:scaleType="centerInside"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 android:scrollbars="horizontal"
                 tools:listitem="@layout/dbmssinglerecyclerview" />
 
@@ -107,8 +116,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="4] APIs"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:justificationMode="inter_word"
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -157,15 +166,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="5] WEB SERVERS"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:justificationMode="inter_word"
+                android:textStyle="bold"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/ServerRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="12dp"
-                android:scaleType="centerInside"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 android:scrollbars="horizontal"
                 tools:listitem="@layout/serversinglerecyclerlayout" />
 
@@ -176,8 +188,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="6] VERSION CONTROL SYSTEM"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:justificationMode="inter_word"
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -224,15 +236,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="7] TESTING TOOLS"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:justificationMode="inter_word"
+                android:textStyle="bold"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/TTRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="12dp"
-                android:scaleType="centerInside"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 android:scrollbars="horizontal"
                 tools:listitem="@layout/ttsinglerecyclerlayout" />
 
@@ -243,15 +258,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="8] DEPLOYMENT TOOLS"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:justificationMode="inter_word"
+                android:textStyle="bold"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/DTRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="12dp"
-                android:scaleType="centerInside"
+                android:clipToPadding="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 android:scrollbars="horizontal"
                 tools:listitem="@layout/deploymentsinglelayout" />
 

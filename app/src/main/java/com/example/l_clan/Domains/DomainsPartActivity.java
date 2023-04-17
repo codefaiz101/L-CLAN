@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.l_clan.Adapter.DomainAdapter;
 import com.example.l_clan.Classes.RecyclerItemClickListener;
 import com.example.l_clan.Domains.AndroidDevelopment.Android_Development_Activity;
+import com.example.l_clan.Domains.ArtificialIntellegenceDevelopment.Artificial_Intellengence_Activity;
 import com.example.l_clan.Domains.WebDevelopment.WebActivity;
 import com.example.l_clan.Models.DomainModels;
 import com.example.l_clan.OtherActivities.MainActivity2;
@@ -89,7 +90,7 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
                             startActivity(intent4);
                             break;
                         case 5:
-                            Intent intent5 = new Intent(getApplicationContext(),MainActivity2.class);
+                            Intent intent5 = new Intent(getApplicationContext(), Artificial_Intellengence_Activity.class);
                             startActivity(intent5);
                             break;
                         case 6:
@@ -234,7 +235,7 @@ public class DomainsPartActivity extends AppCompatActivity implements Navigation
                     startActivity(intent8);
                     break;
                 case R.id.ARTIFICIAL_INTELLIGENCE:
-                    Intent intent9 = new Intent(getApplicationContext(), coming_soon.class);
+                    Intent intent9 = new Intent(getApplicationContext(), Artificial_Intellengence_Activity.class);
                     startActivity(intent9);
                     break;
                 case R.id.DATABASE_MANAGEMENT:

@@ -18,7 +18,7 @@
         <item name="android:windowContentTransitions">true</item>
     </style>
 
-    <style name="Theme.LCLAN.NoActionBar" >
+    <style name="Theme.LCLAN.NoActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
@@ -36,12 +36,17 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-<!--        for default font color and font-->
+        <!--        for default font color and font-->
         <item name="android:textColor">@color/default_text_color</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <style name="Theme.LCLAN.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.LCLAN.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="new_theme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="new_theme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

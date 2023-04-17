@@ -63,10 +63,5 @@ dependencies {
 
     //pinview dependeny
     implementation 'io.github.chaosleung:pinview:1.4.4'
-
-    //profile view circle
-    implementation 'de.hdodenhof:circleimageview:3.1.0'
-
-    //picasso image from internet
-    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

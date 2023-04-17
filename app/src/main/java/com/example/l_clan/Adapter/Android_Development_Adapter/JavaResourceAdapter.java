@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.l_clan.Adapter.BackendAdapters.ProgramminglanguageAdapter;
 import com.example.l_clan.Models.Android_Development.JavaResourcesModel;
 import com.example.l_clan.R;
 

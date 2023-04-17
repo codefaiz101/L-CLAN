@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="@color/chatbackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Domains.ArtificialIntellegenceDevelopment.Artificial_Intelligence_Learning.AI_Python_Fragment.Ai_Python_Fragment_Youtube">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/PythonYtResource1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="# Rank 1 (CodeWithHarry)"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:textColor="@color/white"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:id="@+id/PythonYtResourceimage1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/youtube12" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/PythonYtResource2"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:text="# Rank 2 (Telusko)"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/PythonYtResourceimage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/youtube12" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/PythonYtResource3"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:text="# Rank 3 (WsCube Tech)"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/PythonYtResourceimage3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/youtube12" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="195dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/PythonYtResource4"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="#28b0ff"
+                            android:text="# Rank 4 (Corey Schafer)"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/PythonYtResourceimage4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/youtube12" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

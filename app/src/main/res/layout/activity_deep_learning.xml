@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chatbackground"
+    tools:context=".Domains.ArtificialIntellegenceDevelopment.Deep_Learning.Deep_Learning_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:scrollbarTrackVertical="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:padding="7dp"
+        android:id="@+id/tol1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Deep_Learning_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Deep_Learning_info_text"
+        android:justificationMode="inter_word"
+        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/DL_Maths_languages_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/DL_Maths_languages_info_text"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/DL_Libraries_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:scrollbars="horizontal"
+            tools:listitem="@layout/ml_libraries_recycleview" />
+        <TextView
+            android:id="@+id/DL_technique_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/DL_technique_info_text"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

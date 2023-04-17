@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="20dp"
+    android:background="@drawable/userprofilebgimg"
     tools:context=".Domains.WebDevelopment.Backend.BackendFragment.WebServersFragementpart.ApacheFragment.ApacheFragmentYoutube">
 
     <!-- TODO: Update blank fragment layout -->
