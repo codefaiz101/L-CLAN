@@ -50,6 +50,8 @@ public class forum_main extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent groupchatintent = new Intent(forum_main.this,group_chat.class);
+                String sendername = getIntent().getStringExtra("username");
+                groupchatintent.putExtra("username",sendername);
                 startActivity(groupchatintent);
             }
         });
