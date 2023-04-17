@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:onClick="loginuser"
     android:orientation="vertical"
     android:textAlignment="center"
     tools:context=".OtherActivities.loginpage">

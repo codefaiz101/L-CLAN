@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 import com.example.l_clan.Domains.DomainsPartActivity;
 import com.example.l_clan.R;
 import com.example.l_clan.forum.forum_main;
-import com.example.l_clan.forum.group_chat;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class userprofile extends AppCompatActivity {
@@ -28,7 +26,7 @@ public class userprofile extends AppCompatActivity {
         setContentView(R.layout.activity_userprofile);
         logout = findViewById(R.id.logout);
         waytoforum = findViewById(R.id.waytoforum);
-        showusername = findViewById(R.id.showusername);
+        showusername = findViewById(R.id.showusername_user_profile);
         mAuth = FirebaseAuth.getInstance();
 
         Intent intent = getIntent();

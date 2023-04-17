@@ -23,7 +23,7 @@
 
     <TextView
         android:textAllCaps="true"
-        android:id="@+id/showusername"
+        android:id="@+id/showusername_user_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
